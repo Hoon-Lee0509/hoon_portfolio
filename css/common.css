@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* tag reset */
+body, h1, h2, h3, h4, h5, h6, ul, p, button{margin: 0;padding: 0;}
+ul{list-style: none;}
+a:link, a:visited, a:hover, a:active{text-decoration: none; color: inherit;}
+h1, h2, h3, h4, h5, h6{font-size: inherit;}
+img{vertical-align: top;}
+button{font-family: inherit; font-size: inherit; color: inherit; border: none; cursor: pointer; background: none;}
+header, nav, article, section, footer{display: block;}
+
+
+body{font-family: "나눔고딕", "NanumGothic", "Noto Sans KR"; font-size: 14px; font-weight: 400;}
+
+/* common class */
+.blind{width: 1px; height: 1px; overflow: hidden; border: none; position: absolute; clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%);}
+.clearfix::after{content: ""; display: block; clear: both;}
+.d_f{display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: -webkit-box; display: flex;}
+
+/* #skip */
+#skip a{position: absolute; top: 0; left: -9999px; z-index: 1000;}
+#skip a:focus{left: 0; width: 100%; background: #7e2323; color: #f4f4f4; text-align: center; height: 60px; line-height: 60px; font-size: 18px; font-weight: 500;}
+
+/* .wrap */
+.w1330{width: 1330px; margin: 0 auto; text-align: center;}
+
+/* #header */
+#header{position: fixed; top: 0; left: 0; width: 100vw; height: 40px; background: #2f4364; z-index: 900;}
+#header div.d_f.w1330{justify-content: space-between;}
+#header a{display: block;}
+#header .logo{width: 80px;height: 40px;}
+#header .logo img{display: block; width: 145px; height: 40px;}
+#header .util{width: 100px; height: 30px; color: #f4f4f4; margin-top: 5px;}
+#header .util .gnb_open_btn{line-height: 30px; font-size: 18px;}
+#header .util .gnb_open_btn img{width: 30px; height: 30px;}
+
+/* menu */
+#gnb{position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: url("../images/background/kakao_bg.jpeg") no-repeat center; background-size: cover; display: none;}
+#gnb.on{display: block;}
+#gnb .gnb_close_btn{display: block; line-height: 30px; font-size: 18px; float: right;width: 100px; height: 30px; color: #f4f4f4; margin-top: 5px;}
+#gnb .gnb_close_btn img{width: 30px; height: 30px;}

@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* #main */
+#main{width: 100%; height: 100vh; background: url("../images/background/main_bg_flower_1920.jpg") no-repeat center top; background-size: cover;}
+#main .main_logo{}
+#main .main_logo img{display: block; width: 685px; height: 132px;}
+#main p{font-size: 24px; text-align: left;}
+#main .text1{}
+#main .text2{color: #fff09f;}
+#main .text3{line-height: 36px; color: #f4f4f4; text-align: left;}
+
+/* #intro */
+#intro{position: relative; width: 100%; height: 100vh; background: url("../images/background/intro_1920_bg.png") no-repeat left top; background-size: cover;}
+#intro .frame{width: 450px;height: 700px; border-radius: 225px; background: url("../images/background/intro_bg_resize.jpeg") no-repeat center; background-size: cover;}
+
+
+/* #introduction */
+#introduction{background-color: #1e1e1e; color: #f4f4f4; width: 100%; height: 100%;}
+#introduction .introduces{height: 1400vh;}
+#introduction .sticky{position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh; background-color: #2f4364;}
+#introduction .text_wrap{position: relative; height: 100%; overflow: hidden;}
+#introduction .text_wrap div{position: absolute; top: 0; left: 0; font-size: 120px; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: all 0.2s;}
+#introduction .text_wrap .fest_bg, #introduction .text_wrap .lib_bg,#introduction .text_wrap .theh_bg{background: no-repeat center; background-size: 50%;}
+#introduction .text_wrap .fest_bg{background-image: url("../images/mock-up/KGR_fest_iMac.png");}
+#introduction .text_wrap .lib_bg{background-image: url("../images/mock-up/KGR_lib_iMac.png");}
+#introduction .text_wrap .theh_bg{background-image: url("../images/mock-up/theh_iMac.png");}
+
+#introduction .text_wrap div.on{opacity: 1;}
+#introduction .tabgroup{display: flex; justify-content: center; margin: 150px 0 0;}
+#introduction .tabgroup .tab{width: 320px;height: 50px; line-height: 50px; background-color: #2f4364; cursor: pointer;}
+#introduction .tabgroup .tab.on{background-color: #a3b1ca; color: #2f4364;}
+#introduction .tabbg{position: relative; width: 1280px; height: 600px; overflow: hidden; margin: 0 auto;}
+#introduceTab .tabpanel{background-color: #a3b1ca; color: #2f4364;width: 1280px;height: 600px; margin: 0 auto;}
+#introduceTab .tabpanel:not(#tabpanel1){position: relative;}
+#introduceTab .tabpanel:not(#tabpanel1) div{position: absolute; margin: 50px; background: #f4f4f4; width: 1180px; height: 500px; overflow-y: scroll;}
+#introduceTab .tabpanel .skill{display: flex; justify-content: space-around; text-align: left; margin: 0 auto; padding-top: 50px; flex-wrap: wrap;}
+#introduceTab .tabpanel .skill .skill_bg{width: 600px;height: 70px; border-radius: 35px; background: #9b9b9b;}
+#introduceTab .tabpanel .skill li .skill_gauge{width: 70px; height: 70px; border-radius: 35px; transition: width 1s;}
+#introduceTab .tabpanel .skill li:nth-of-type(1) .skill_gauge.on{width: 580px; background: #e93e30;}
+#introduceTab .tabpanel .skill li:nth-of-type(2) .skill_gauge.on{width: 550px; background: #35a8db;}
+#introduceTab .tabpanel .skill li:nth-of-type(3) .skill_gauge.on{width: 480px; background: #ffda3e;}
+#introduceTab .tabpanel .skill li:nth-of-type(4) .skill_gauge.on{width: 520px; background: #31a8ff;}
+#introduceTab .tabpanel .skill li:nth-of-type(5) .skill_gauge.on{width: 420px; background: #fe9900;}
+#introduceTab .tabpanel .skill li:nth-of-type(6) .skill_gauge.on{width: 480px; background: #fd60f3;}
+#introduceTab .tabpanel .skill li p{font-size: 14px; padding: 25px;}
+#introduceTab .tabpanel .skill .skill_btn{width: 70px; height: 70px;}
+#introduceTab .tabpanel .skill .skill_btn img{display: block; width: 100%; height: 100%;}
+/* #footer */
+#footer{width: 100%; height: 300px; background: #1e1e1e; color: #f4f4f4;}
+#footer p:first-of-type{position: relative; padding-top: 150px;}
+#footer p:first-of-type::before{content: ""; position: absolute; top: 100px; left: calc(50% - 665px); width: 1330px; height: 2px; background: #f4f4f4;}
+#footer p:nth-of-type(2){padding-top: 40px;}
