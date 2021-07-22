@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    $('#skillBtn1 > img').on('click', function (e) {
-        e.preventDefault();
+    $('#skillBtn1').on('click', function () {
         $(this).closest('.skill_gauge').toggleClass('on');
+        return false;
     });
 });

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,196 +8,211 @@
     <title>My Fxxxxx Life | 이훈 2021 PORTFOLIO</title>
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="js/stickyfill.min.js"></script>
     <script src="js/sticky.js"></script>
+    <script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.variable').slick({
+                    centerMode: true,
+                    centerPadding: '20px',
+                    slidesToShow: 1,
+                    slideToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1000,
+                    infinite: true,
+                    dots: true,
+                });
+            });
+    </script>
 </head>
+
 <body>
     <div id="skip">
         <a href="">본문 바로가기</a>
     </div>
-        <header id="header">
-            <div class="d_f w1330">
-                <h1 class="logo">
-                    <a href="#">
-                        <img src="images/logo/logo_white.png" alt="My Flower Life">
-                    </a>
-                </h1>
-                <div class="util">
-                    <a href="" class="gnb_open_btn"><img src="images/icon/menu/menu_resize.png" alt="">MENU</a>
-                </div>
+    <header id="header" class="p_f">
+        <div class="header w1330">
+            <h1 class="logo p_a">
+                <a href="#">
+                    <img src="images/logo/logo_white.png" alt="My Flower Life">
+                </a>
+            </h1>
+            <div class="util p_a">
+                <a href="" class="gnb_open_btn"><img src="images/common/menu_resize.png" alt="">MENU</a>
             </div>
-            <nav id="gnb" class="w1330">
-                <h2 class="blind">주메뉴</h2>
-                <a href="" class="gnb_close_btn"><img src="images/icon/menu/menu_resize.png" alt="">CLOSE</a>
-                <ul>
-                    <li><a href="#"><img src="images/logo/logo_white.png" alt="My Flower Life"></a></li>
-                    <li><a href="#">Intro</a></li>
-                    <li><a href="#">Introduction</a></li>
-                    <li><a href="work/work01_kgr.html">Work 01. 고구려대학교</a></li>
-                    <li><a href="work/work02_theh.html">Work 02. 디에이치퍼니쳐</a></li>
-                    <li><a href="sub/outro.html">Outro</a></li>
-                    <li><a href="sub/subs.html">Subscribe Me</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section id="main">
-            <div class="w1330">
-                <h2 class="main_logo">
-                    <img src="images/logo/logo_3x_white.png" alt="">
-                </h2>
-                <p class="text1">Lee Hoon 2021 Web Publishing PORTFOLIO</p>
-                <p class="text2">Can I be a flower, too?</p>
-                <p class="text3">이 홈페이지는 1920px 해상도에 최적화 되어 있습니다.<br>
-                    최소 1330px 이상의 모니터에서 확인해주시는 것을 권장드립니다.</p>
-            </div>
-        </section>
-        <section id="intro">
-            <article class="w1330">
-                <h2 class="intro_tit w1330">Intro. 시작하며</h2>
-                <div class="frame"></div>
+        </div>
+        <nav id="gnb" class="w1330 p_f">
+            <h2 class="blind">주메뉴</h2>
+            <a href="" class="gnb_close_btn"><img src="images/common/menu_resize.png" alt="">CLOSE</a>
+            <ul>
+                <li><a href="#"><img src="images/logo/logo_white.png" alt="My Flower Life"></a></li>
+                <li><a href="#">Intro</a></li>
+                <li><a href="#">Introduction</a></li>
+                <li><a href="work/work01_kgr.html">Work 01. 고구려대학교</a></li>
+                <li><a href="work/work02_theh.html">Work 02. 디에이치퍼니쳐</a></li>
+                <li><a href="sub/outro.html">Outro</a></li>
+                <li><a href="sub/outro.html">Subscribe Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="main" class="p_r">
+        <h2 class="blind">메인화면</h2>
+        <div class="w1330 p_a">
+            <p class="text1">Lee Hoon 2021 Web Publishing PORTFOLIO</p>
+            <img src="images/logo/logo_3x_white.png" alt="My Flower Life">
+            <p class="text2">Can I be a Flower, too?</p>
+        </div>
+        <p class="text3 p_a">이 홈페이지는 1920px 해상도에 최적화 되어 있습니다.<br>최소 1330px 이상의 모니터에서 확인해주시는 것을 권장드립니다.</p>
+    </section>
+    <section id="intro">
+        <article class="w1330 d_f">
+            <div class="frame"></div>
+            <div class="intro_txt">
+                <h3 class="intro_tit">Intro. 시작하며</h3>
                 <p>우린 대체로 꽃을 좋아합니다.<br>
                     꽃은 누군가에겐 설렘과 사랑 또는 축하와 격려를<br>
                     또 누군가에겐 위로를 해주기도 합니다.</p>
-                    <p>저도 누군가에게는 그런 꽃같은 존재가 되었으면 합니다.<br>
-                        꽃을 피는데 엄청난 시간이 걸리는 선인장 같이 묵묵히 <br>
-                        이훈이라는 꽃을 피우기 위해 기다리고 준비하고 있습니다.</p>
-            </article>
-        </section>
-        <section id="introduction" class="d2cording">
-            <h2 class="blind">Introduction. 저를 소개합니다.</h2>
-            <article class="introduce_name">
-                <div class="introduces">
-                    <div class="sticky">
-                        <div class="text_wrap">
-                            <div></div>
-                            <div>저</div>
-                            <div>저는</div>
-                            <div>저는 이</div>
-                            <div>저는 이훈</div>
-                            <div>저는 이훈입</div>
-                            <div>저는 이훈입니</div>
-                            <div>저는 이훈입니다</div>
-                            <div>저를</div>
-                            <div>지켜봐주세요</div>
-                            <div class="fest_bg"></div>
-                            <div class="lib_bg"></div>
-                            <div class="theh_bg"></div>
+                <p>저도 누군가에게는 그런 꽃같은 존재가 되었으면 합니다.<br>
+                    꽃을 피는데 엄청난 시간이 걸리는 선인장 같이 묵묵히 <br>
+                    이훈이라는 꽃을 피우기 위해 기다리고 준비하고 있습니다.</p>
+            </div>
+        </article>
+    </section>
+    <section id="introduction" class="d2cording">
+        <h2 class="blind">Introduction. 저를 소개합니다.</h2>
+        <article class="introduce_name">
+            <h3 class="blind">소개 시작</h3>
+            <div class="introduces">
+                <div class="sticky">
+                    <div class="text_wrap">
+                        <div>저의 이름은 이훈</div>
+                        <div>웹퍼블리셔(가 되고 싶)죠</div>
+                        <div>어서 저를 구독해주세요</div>
+                        <div>구독료는</div>
+                        <div>대표님 마음입니다♥</div>
+                        <div>(사실 최저임금은 맞춰주셔야죠)</div>
+                        <div>그럼 저와 제 프로젝트를 보러 가시죠</div>
+                        <div>3</div>
+                        <div>2</div>
+                        <div>1</div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div class="introduce_tab w1330">
+            <h3>#자기소개{ <span>skill: 사용하는 프로그램 및 주 사용 언어의 능력치입니다;</span> }</h3>
+            <div id="introduceTab">
+                <ul role="tablist" aria-label="introduce" class="tabgroup">
+                    <li role="tab" aria-controls="tabpanel1" id="tab1" class="tab first active">skill:</li>
+                    <li role="tab" aria-controls="tabpanel2" id="tab2" class="tab">덕질의힘:</li>
+                    <li role="tab" aria-controls="tabpanel3" id="tab3" class="tab">틀린게아닌다름:</li>
+                    <li role="tab" aria-controls="tabpanel4" id="tab4" class="tab last">잘부탁드립니다:</li>
+                </ul>
+                <div id="tabPanel" class="tabbg">
+                    <div role="tabpanel" aria-labelledby="tab1" id="tabpanel1" class="tabpanel active">
+                        <ul class="skill">
+                            <li class="html">
+                                <div class="skill_bg">
+                                    <div class="skill_gauge">
+                                        <button type="button" class="skill_btn">
+                                            <img src="images/index_outro/html.png" alt="html5 로고">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p>HTML5 웹 표준을 이해하고 시멘틱 마크업을 통해 효율적인 마크업을 할 수 있습니다.</p>
+                            </li>
+                            <li class="ps">
+                                <div class="skill_bg">
+                                    <div class="skill_gauge">
+                                        <button type="button" class="skill_btn">
+                                            <img src="images/index_outro/ps.png" alt="어도비 포토샵 로고">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p>포토샵 내 기본 툴 사용 및 간단한 로고, 사진 보정 등을 할 수 있습니다.</p>
+                            </li>
+                            <li class="css">
+                                <div class="skill_bg">
+                                    <div class="skill_gauge">
+                                        <button type="button" class="skill_btn">
+                                            <img src="images/index_outro/css.png" alt="css3.0 로고">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p>CSS3.0 표준을 이해하고 크로스 브라우징, 접근성 등을<br>
+                                    고려하여 스타일 시트를 작성할 수 있습니다.</p>
+                            </li>
+                            <li class="ai">
+                                <div class="skill_bg">
+                                    <div class="skill_gauge">
+                                        <button type="button" class="skill_btn">
+                                            <img src="images/index_outro/Ai.png" alt="어도비 일러스트레이터 로고">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p>일러스트레이터의 일부 툴을 이용한 간단한 로고 작업 등을 할 수 있습니다.</p>
+                            </li>
+                            <li class="js">
+                                <div class="skill_bg">
+                                    <div class="skill_gauge">
+                                        <button type="button" class="skill_btn">
+                                            <img src="images/index_outro/js.png" alt="자바스크립트 로고">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p>함수와 선택자, 이벤트리스너 등 JAVA Script의 기본 기능을 이해하며,<br>자바스크립트 기반의 JQuery를 통한 효과 삽입을 할 수 있습니다.
+                                </p>
+                            </li>
+                            <li class="xd">
+                                <div class="skill_bg">
+                                    <div class="skill_gauge">
+                                        <button type="button" class="skill_btn">
+                                            <img src="images/index_outro/xd.png" alt="어도비 XD 로고">
+                                        </button>
+                                    </div>
+                                </div>
+                                <p>XD의 툴과 구성요소, 프로토 타입 등을 통해 홈페이지 구동 효과를 낼 수 있습니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" aria-labelledby="tab2" id="tabpanel2" class="tabpanel">
+                        <div>
+                            <p>덕질</p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" aria-labelledby="tab3" id="tabpanel3" class="tabpanel">
+                        <div>
+                            <p>평등</p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" aria-labelledby="tab4" id="tabpanel4" class="tabpanel">
+                        <div>
+                            <p>만반잘부</p>
                         </div>
                     </div>
                 </div>
-            </article>
-                <div class="introduce_tab w1330">
-                        <div id="introduceTab">
-                            <ul role="tablist" aria-label="introduce" class="tabgroup">
-                                <li role="tab" aria-controls="tabpanel1" id="tab1" class="tab first on">skill:</li>
-                                <li role="tab" aria-controls="tabpanel2" id="tab2" class="tab">덕질의힘:</li>
-                                <li role="tab" aria-controls="tabpanel3" id="tab3" class="tab">틀린게아닌다름:</li>
-                                <li role="tab" aria-controls="tabpanel4" id="tab4" class="tab last">잘부탁드립니다:</li>
-                            </ul>
-                            <div id="tabPanel" class="tabbg">
-                                <div role="tabpanel" aria-labelledby="tab1" id="tabpanel1" class="tabpanel">
-                                    <ul class="skill">
-                                        <li class="html">
-                                            <div class="skill_bg">
-                                                <div class="skill_gauge">
-                                                    <button type="button" id="skillBtn1">
-                                                        <img src="images/icon/skill/html.png" alt="html5">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p>HTML5 웹 표준을 이해하고 시멘틱 마크업을 통해 효율적인 마크업을 할 수 있습니다.</p>
-                                        </li>
-                                        <li class="ps">
-                                            <div class="skill_bg">
-                                                <div class="skill_gauge">
-                                                    <button type="button" class="skill_btn">
-                                                        <img src="images/icon/skill/ps.png" alt="">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p>포토샵 내 기본 툴 사용 및 간단한 로고, 사진 보정 등을 할 수 있습니다.</p>
-                                        </li>
-                                
-                                        <li class="css">
-                                            <div class="skill_bg">
-                                                <div class="skill_gauge">
-                                                    <button type="button" class="skill_btn">
-                                                        <img src="images/icon/skill/css.png" alt="">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p>CSS3.0 표준을 이해하고 크로스 브라우징, 접근성 등을<br>
-                                                고려하여 스타일 시트를 작성할 수 있습니다.</p>
-                                        </li>
-                                
-                                        <li class="ai">
-                                            <div class="skill_bg">
-                                                <div class="skill_gauge">
-                                                    <button type="button" class="skill_btn">
-                                                        <img src="images/icon/skill/Ai.png" alt="">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p>일러스트레이터의 일부 툴을 이용한 간단한 로고 작업 등을 할 수 있습니다.</p>
-                                        </li>
-                                        <li class="js">
-                                            <div class="skill_bg">
-                                                <div class="skill_gauge">
-                                                    <button type="button" class="skill_btn">
-                                                        <img src="images/icon/skill/js.png" alt="">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p>함수와 선택자, 이벤트리스너 등 JAVA Script의 기본 기능을 이해하며,<br>
-                                                JQuery를 통한 효과 삽입을 할 수 있습니다.</p>
-                                        </li>
-                                        <li class="xd">
-                                            <div class="skill_bg">
-                                                <div class="skill_gauge">
-                                                    <button type="button" class="skill_btn">
-                                                        <img src="images/icon/skill/xd.png" alt="">
-                                                    </button>
-                                                </div>
-                                            </div>
-                                            <p>XD의 툴과 구성요소, 프로토 타입 등을 통해 홈페이지 구동 효과를 낼 수 있습니다.</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div role="tabpanel" aria-labelledby="tab2" id="tabpanel2" class="tabpanel">
-                                    <div>
-                                        <p>덕질</p>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" aria-labelledby="tab3" id="tabpanel3" class="tabpanel active">
-                                    <div>
-                                        <p>평등</p>
-                                    </div>
-                                </div>
-                                <div role="tabpanel" aria-labelledby="tab4" id="tabpanel4" class="tabpanel">
-                                    <div>
-                                        <p>만반잘부</p>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <article id="goSlide" class="w1330">
-                    <h3>$(‘#작업물을확인해보세요’).on(‘click’, function () {</h3>
-                    <div class="visual" aria-live="polite">
-                        <ul>
-                            <li><img src="images/mock-up/KGR_fest_iMac.png" alt="아이맥 속 고구려대학교 축제 및 문화제 페이지"></li>
-                            <li><img src="images/mock-up/theh_iMac.png" alt="아이맥 속 디에이치퍼니쳐 메인 페이지"></li>
-                            <li><img src="images/mock-up/KGR_lib_iMac.png" alt="아이맥 속 고구려대학교 도서관 페이지"></li>
-                        </ul>
-                    </div>
-                    <p>});</p>
-                </article>
-        </section>
-        <footer id="footer" class="w1330">
-            <p>Lee Hoon 2021 Web Publishing Portfolio | My Fxxxxx Life</p>
-            <p>Copyright &copy; HOON. All Right Reserved.</p>
-        </footer>
+            </div>
+        </div>
+        <article id="workShow" class="w1330">
+            <h3>$(‘#작업물을확인해보세요’).on(‘click’, function () {</h3>
+            <div class="showroom d_f">
+                <div><img src="images/mock-up/KGR_fest_iMac.png" alt="아이맥 속 고구려대학교 축제 및 문화제 페이지"></div>
+                <div><img src="images/mock-up/theh_iMac.png" alt="아이맥 속 디에이치퍼니쳐 메인 페이지"></div>
+                <div><img src="images/mock-up/KGR_lib_iMac.png" alt="아이맥 속 고구려대학교 도서관 페이지"></div>
+            </div>
+            <p>});</p>
+        </article>
+    </section>
+    <footer id="footer" class="w1330">
+        <p>Lee Hoon 2021 Web Publishing Portfolio | My Fxxxxx Life</p>
+        <p>Copyright &copy; HOON. All Right Reserved.</p>
+    </footer>
 </body>
+
 </html>

@@ -1,7 +1,6 @@
 $(document).ready(function () {
     const winHei = $(window).height();
     const stickyY = $('.sticky').offset().top;
-    // console.log(stickyY);
 
     $(window).on('scroll', function () {
         const scrollY = $(this).scrollTop();
