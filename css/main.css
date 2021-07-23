@@ -24,13 +24,12 @@
 #introduction .introduces{height: 1200vh;}
 #introduction .sticky{position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh; background-color: #2f4364;}
 #introduction .text_wrap{position: relative; height: 100%; overflow: hidden;}
-#introduction .text_wrap div{position: absolute; top: 0; left: 0; font-size: 120px; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: all 0.2s;}
-#introduction .text_wrap div p{position: absolute; bottom: 10px; left: calc(50% - 275px); font-size: 120px; line-height: 120px;}
-#introduction .text_wrap div img{position: absolute; top: calc(50% - 180px); left: calc(50% - 240px);}
+#introduction .text_wrap div{top: 0; left: 0; font-size: 5vw; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: all 0.2s;}
+#introduction .text_wrap .five{font-size: 10vw;}
+#introduction .text_wrap .four{font-size: 20vw;}
+#introduction .text_wrap .three{font-size: 40vw;}
+
 #introduction .text_wrap .fest_bg, #introduction .text_wrap .lib_bg,#introduction .text_wrap .theh_bg{background: no-repeat center; background-size: 50%;}
-#introduction .text_wrap .fest_bg{background-image: url("../images/mock-up/KGR_fest_iMac.png");}
-#introduction .text_wrap .lib_bg{background-image: url("../images/mock-up/KGR_lib_iMac.png");}
-#introduction .text_wrap .theh_bg{background-image: url("../images/mock-up/theh_iMac.png");}
 
 #introduction .text_wrap div.on{opacity: 1;}
 #introduction .tabgroup{display: flex; justify-content: center; margin: 150px 0 0;}
@@ -44,12 +43,12 @@
 #introduceTab .tabpanel .skill{display: flex; justify-content: space-around; margin: 0 auto; padding-top: 50px; flex-wrap: wrap;}
 #introduceTab .tabpanel .skill .skill_bg{width: 600px;height: 70px; border-radius: 35px; background: #9b9b9b;}
 #introduceTab .tabpanel .skill li .skill_gauge{width: 70px; height: 70px; border-radius: 35px; transition: width 1s;}
-#introduceTab .tabpanel .skill li:nth-of-type(1) .skill_gauge.on{width: 580px; background: #e93e30;}
-#introduceTab .tabpanel .skill li:nth-of-type(2) .skill_gauge.on{width: 550px; background: #35a8db;}
-#introduceTab .tabpanel .skill li:nth-of-type(3) .skill_gauge.on{width: 480px; background: #ffda3e;}
-#introduceTab .tabpanel .skill li:nth-of-type(4) .skill_gauge.on{width: 520px; background: #31a8ff;}
-#introduceTab .tabpanel .skill li:nth-of-type(5) .skill_gauge.on{width: 420px; background: #fe9900;}
-#introduceTab .tabpanel .skill li:nth-of-type(6) .skill_gauge.on{width: 480px; background: #fd60f3;}
+#introduceTab .tabpanel .skill li.html .skill_gauge.on{width: 550px; background: #e93e30;}
+#introduceTab .tabpanel .skill li.css .skill_gauge.on{width: 500px; background: #35a8db;}
+#introduceTab .tabpanel .skill li.js .skill_gauge.on{width: 450px; background: #ffda3e;}
+#introduceTab .tabpanel .skill li.ps .skill_gauge.on{width: 500px; background: #31a8ff;}
+#introduceTab .tabpanel .skill li.ai .skill_gauge.on{width: 400px; background: #fe9900;}
+#introduceTab .tabpanel .skill li.xd .skill_gauge.on{width: 450px; background: #fd60f3;}
 #introduceTab .tabpanel .skill li p{font-size: 14px; padding: 25px;}
 #introduceTab .tabpanel .skill .skill_btn{width: 70px; height: 70px;}
 #introduceTab .tabpanel .skill .skill_btn img{display: block; width: 100%; height: 100%;}
@@ -57,10 +56,13 @@
 #introduceTab .tab:hover, #introduceTab .tab:focus, #introduceTab .tab.active{background: #a3b1ca; color: #2f4364;}
 
 
-#workShow .showroom{margin: 50px 0;}
-#workShow .showroom div + div{margin-left: 20px;}
-#workShow .showroom div img{display: block; width: 100%; height: 100%;}
+#workShow .slick-wrapper{margin: 50px 0;}
+#workShow .slick-wrapper .slick-slide img{width: 100%;padding: 50px;box-sizing: border-box;}
+#workShow .slick-wrapper .slick-slide a{display: block; text-align: center; font-size: 16px;}
 #workShow p{font-size: 24px; margin-left: 20px;}
+#workShow .controller{justify-content: space-around; text-align: center; margin: 0 auto; width: 150px; height: 30px; border: 1px solid #f4f4f4; border-radius: 15px;}
+#workShow .controller button{width: 71px; height: 26px; line-height: 26px; margin-top: 2px;  border-radius: 14px; box-sizing: border-box; transition: all 0.5s;}
+#workShow .controller button.on{background: #f4f4f4; color: #1e1e1e;}
 
 /* #footer */
 #footer{width: 100vw; height: 300px; background: #1e1e1e; color: #f4f4f4; text-align: center;}

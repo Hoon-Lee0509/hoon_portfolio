@@ -10,5 +10,5 @@ $(document).ready(function () {
     });
     
     const elements = $('.sticky');
-    Stickyfill.add(stickyCnt);
+    Stickyfill.add(elements);
 });

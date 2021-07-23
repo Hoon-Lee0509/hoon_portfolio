@@ -1,6 +1,15 @@
 $(document).ready(function() {
-    $('#skillBtn1').on('click', function () {
-        $(this).closest('.skill_gauge').toggleClass('on');
-        return false;
+    $('.skill_btn').on('click', function () {
+        $(this).parent().toggleClass('on');
+    });
+
+    $('.slick-pause').on('click', function() {
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.slick-wrapper').slick('slickPause');
+    });
+    
+    $('.slick-play').on('click', function() {
+        $(this).addClass('on').siblings().removeClass('on');
+        $('.slick-wrapper').slick('slickPlay');
     });
 });
