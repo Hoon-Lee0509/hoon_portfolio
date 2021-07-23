@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+#outro, #subsMe{width: 100vw; height: 100vh;}
+#outro{background: #00f;}
+#subsMe{background: #f50a32;}

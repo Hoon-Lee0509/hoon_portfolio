@@ -1,28 +1,19 @@
 @charset "utf-8";
 
-#header{background-color: rgba(189, 72, 72, 0.5);}
-
+#header{background-color: #bd4848;}
 /* #cnt1 */
-#cnt1{justify-content: space-between; margin-top: 250px;}
-#cnt1 img{display: block; width: 780px; height: 658px;}
-#cnt1 h2{width: 250px; height: 120px; font-family: GyeonggiBatang; font-size: 60px; font-weight: bold; background: url("../images/common/style_white.png") no-repeat center; background-size: contain;}
-#cnt1 .p_time{margin-top: 15px;}
-#cnt1 .p_story{width: 410px; margin-top: 100px;}
-#cnt1 > div > div{justify-content: space-between;}
-#cnt1 a{display: block; width: 200px; height: 50px; background: #bd4848; color: #f9f9f9; text-align: center; line-height: 48px; border: 1px solid #bd4848; box-sizing: border-box; border-radius: 5px; transition: all 0.5s; margin-top: 100px;}
+
+
+#cnt1 h2{width: 350px;}
+#cnt1 a{background: #bd4848; color: #f9f9f9; border: 1px solid #bd4848;}
 #cnt1 a:hover, #cnt1 a:focus{background: #f9f9f9; color: #bd4848;}
 
 /* #cnt2 */
-#cnt2{margin: 90px 0;}
-#cnt2 ul{justify-content: space-between;}
-#cnt2 li{width: 370px;}
-#cnt2 h3{font-weight: 700; padding: 27px 0 0 20px; font-size: 20px; font-family: NanumSquareRound; line-height: 1}
-#cnt2 li p{position: relative; margin-top: 30px;}
-#cnt2 li p::before{content: ""; position: absolute; top: -15px; left: 0; width: 370px; height: 2px; background: #bd4848;}
+
 
 /* #cnt3 */
-#cnt3{background: #eff0ff;}
-#cnt3 h2{font-size: 36px; font-family: NanumSquareRound; text-align: center;}
+#cnt3{background: rgba(181, 208, 199, 0.3);}
+#cnt3 h2{font-size: 36px; font-family: NanumSquareRound; text-align: center; color: #bd4848;}
 #cnt3 .info_tit{padding-top: 70px;}
 #cnt3 .cl_tit, #cnt3 .res_tit{margin-top: 150px;}
 #cnt3 p{text-align: center; padding-top: 20px;}
@@ -31,22 +22,31 @@
 #conSlide .controller{justify-content: space-around; text-align: center; color: #bd4848; margin: 0 auto; width: 150px; height: 30px; border: 1px solid #bd4848; border-radius: 15px;}
 #conSlide .controller button{width: 71px; height: 26px; line-height: 26px; margin-top: 2px;  border-radius: 14px; box-sizing: border-box; transition: all 0.5s;}
 #conSlide .controller button.on{background: #bd4848; color: #f4f4f4;}
-#cnt3 .con_color ul, #cnt3 .responsive ul{justify-content: space-between;}
-#cnt3 .con_color .cl_bg{width: 1330px; height: 300px; border-radius: 20px; background: url("../images/theh/concept_color_h4.jpg") no-repeat center; background-size: cover; margin-top: 60px;}
-#cnt3 .con_color ul{margin-top: 10px; font-family: NanumSquareRound; font-size: 36px; font-weight: 300;}
+#cnt3 .con_color .cl_bg{width: 1330px; height: 300px; border-radius: 20px; background-image: url("../images/kgr/concept_color.png"); margin-top: 60px;}
+#cnt3 .con_color ul li{margin-top: 10px; font-family: NanumSquareRound; font-size: 24px; font-weight: 300;}
 #cnt3 .con_color ul .c1{color: #bd4848;}
-#cnt3 .con_color ul .c2{color: #728c11;}
-#cnt3 .con_color ul .c3{color: #404040;}
-#cnt3 .con_color ul .c4{color: #f2bc8d;}
-#cnt3 .con_color ul .c5{color: #a65f21;}
-#cnt3 .res_list{margin-top: 60px; padding-bottom: 120px;}
+#cnt3 .con_color ul .c2{color: #a7c7e7;}
+#cnt3 .res_list{margin-top: 60px; padding-bottom: 80px;}
+
+/* cnt4-6 공통 */
+#cnt4 h2, #cnt5 h2{font-size: 36px; font-weight: 700; font-family: NanumSquareRound; margin: 150px 0 50px; text-align: center; color: #bd4848;}
+#cnt4 .device, #cnt5 .device{display: block; width: 780px; height: 656px;}
+#cnt4 .d_f, #cnt5 .d_f{justify-content: space-between;}
+#cnt4 .d_f div, #cnt5 .d_f div{width: 420px; margin-top: 200px;}
+#cnt4 .d_f div strong, #cnt5 .d_f div strong{height: 70px; line-height: 70px; font-size: 24px; font-family: NanumSquareRound;}
+#cnt4 .d_f div p, #cnt5 .d_f div p{margin-bottom: 20px; line-height: 24px;}
+#cnt4 .d_f div ul, #cnt5 .d_f div ul{margin-top: 20px; line-height: 24px;}
 /* #cnt4 */
-#cnt4 img:first-of-type{display: block; width: 780px; height: 656px;}
+#cnt4 .d_f div{text-align: left;}
 
 /* #cnt5 */
-#cnt5 img:first-of-type{display: block; width: 780px; height: 783px;}
+#cnt4 .w3c, #cnt5 .w3c{margin: 150px 0; text-align: center;}
+#cnt4 .w3c p, #cnt5 .w3c p{margin-top: 20px}
+#cnt5 .d_f div{text-align: right;}
 
-/* #cnt6 */
-#cnt6 img:first-of-type{display: block; width: 800px; height: 667px;}
+/* footer */
+#footer ul::before{background: #bd4848;}
 
-/* #footer */
+/* #sideBar */
+#sideBar .top{background: #bd4848;}
+#sideBar button:hover, #sideBar a:hover{background: #f4f4f4; color: #bd4848;}
