@@ -1,5 +1,32 @@
 @charset "utf-8";
 
-#outro, #subsMe{width: 100vw; height: 100vh;}
-#outro{background: #00f;}
-#subsMe{background: #f50a32;}
+body{background: #f4f4f4;}
+
+/* common */
+#outro, #subsMe{width: 100vw;}
+
+/* outro */
+#outro{background: rgb(222, 222, 255);height: 100vh;}
+#outro h2, #subsMe h2{padding: 200px 0 80px; text-align: center; font-size: 36px; font-family: GyeonggiBatang; background: url("../images/common/style_black.png") no-repeat center 30%; background-size: 5%;}
+#outro div{text-align: center;}
+#outro div p{margin: 80px auto; width: 500px; word-break: keep-all; font-size: 16px; line-height: 24px;}
+
+/* subsMe */
+#subsMe .subs_btn{justify-content: space-around; margin: 60px auto 80px;}
+#subsMe .subs_btn > div{width: 330px;}
+#subsMe .subs_btn > div > button{width: 80px; height: 80px; background: no-repeat center; background-size: contain;}
+#subsMe .subs_btn .btn1{background-image: url("../images/common/subscribe8.png");}
+#subsMe .subs_btn .btn2{background-image: url("../images/common/love.png");}
+#subsMe .subs_btn .btn3{background-image: url("../images/common/notification.png");}
+#subsMe .subs_btn .btn4{background-image: url("../images/common/contact.png");}
+#subsMe .subs_btn .btn1:hover{background-image: url("../images/common/subscribe6.png");}
+#subsMe .subs_btn .btn2:hover{background-image: url("../images/common/love2.png");}
+#subsMe .subs_btn .btn3:hover{background-image: url("../images/common/notification2.png");}
+#subsMe .subs_btn .btn4:hover{background-image: url("../images/common/contact2.png");}
+#subsMe .subs_btn ul{visibility: hidden; opacity: 0; transition: all 0.4s; width: 250px; height: 80px; line-height: 28px; text-align: left; padding-right: 50px;}
+#subsMe .subs_btn ul.on{ visibility: visible; opacity: 1;padding-left: 20px;}
+#subsMe .subs_btn ul li button, #subsMe .subs_btn ul li a{display: block; border: 1px solid #000; border-radius: 50px; text-align: center; width: 120px; height: 30px;}
+#subsMe .subs_btn ul li:hover button, #subsMe .subs_btn ul li:hover a{background: #1e1e1e; color: #f4f4f4;}
+/* #footer */
+#footer{background: #f4f4f4; color: #1e1e1e;}
+#footer p:first-of-type::before{background: #1e1e1e;}

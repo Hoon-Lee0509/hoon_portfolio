@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OUTRO | 이훈 2021 PORTFOLIO</title>
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/outro.css">
     <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/outro.js"></script>
     <script>
         $(document).ready(function () {
             
@@ -15,50 +18,93 @@
     </script>
 </head>
 <body>
-    <header id="header">
-        <div class="d_f w1330">
-            <h1 class="logo">
+    <div id="skip">
+        <a href="">본문 바로가기</a>
+    </div>
+    <header id="header" class="p_f on">
+        <div class="header w1330">
+            <h1 class="logo p_a">
                 <a href="#">
-                    <img src="images/logo/logo_white.png" alt="My Flower Life">
+                    <img src="../images/logo/logo_white.png" alt="My Flower Life">
                 </a>
             </h1>
-            <div class="util">
-                <a href="" class="gnb_open_btn"><img src="images/icon/menu/menu_resize.png" alt="">MENU</a>
-            </div>
+            <a href="" class="gnb_open_btn p_a">
+                <img src="../images/common/menu_resize.png" alt="">
+                <span>MENU</span>
+            </a>
         </div>
-        <nav id="gnb" class="w1330">
+        <nav id="gnb" class="w1330 p_f">
             <h2 class="blind">주메뉴</h2>
-            <a href="" class="gnb_close_btn"><img src="images/icon/menu/menu_resize.png" alt="">CLOSE</a>
+            <a href="" class="gnb_close_btn"><img src="../images/common/menu_resize.png" alt="">CLOSE</a>
             <ul>
-                <li><a href="#"><img src="images/logo/logo_white.png" alt="My Flower Life"></a></li>
-                <li><a href="#">Intro</a></li>
-                <li><a href="#">Introduction</a></li>
-                <li><a href="work/work01_kgr.html">Work 01. 고구려대학교</a></li>
-                <li><a href="work/work02_theh.html">Work 02. 디에이치퍼니쳐</a></li>
-                <li><a href="sub/outro.html">Outro</a></li>
-                <li><a href="sub/subs.html">Subscribe Me</a></li>
+                <li><a href="#"><img src="../images/logo/logo_white.png" alt="My Flower Life"></a></li>
+                <li><a href="../index.html">Intro</a></li>
+                <li><a href="../index.html#intrduction">Introduction</a></li>
+                <li><a href="../work/work01_kgr.html">Work 01. 고구려대학교</a></li>
+                <li><a href="../work/work02_theh.html">Work 02. 디에이치퍼니쳐</a></li>
+                <li><a href="#">Outro</a></li>
+                <li><a href="#SubsMe">Subscribe Me</a></li>
             </ul>
         </nav>
     </header>
-    <div id="outro" class="w1330">
+    <div id="outro">
         <h2>Outro. 끝마치며</h2>
-        <div>
-            <img src="" alt="">
-            <p></p>
-            <p></p>
+        <div class="w1330">
+            <img src="../images/logo/logo_3x_white.png" alt="">
+            <p>처음 이 로고를 접하셨을 때 어떤 생각이셨을 지 너무나 궁금합니다. 저는 이 로고를 만들면서 "이런 꽃같은 엔딩"이란 웹 드라마가 생각이 났습니다. 마치 글자에서 보이는 모습이 처음엔 비속어와 꽃을 중의적인 표현을 써서 제목을 만든 것인가 하며 당혹스럽기도 재밌기도 했었습니다. 그것에 영감을 받아 Flower를 Fxxxxx로 바꾸어 약간은 당혹스러운 느낌을 주려 해봤습니다. 비록 잘 표현이 되었을지는 모르겠으나 나름 고민과 노력으로 만든 결과물로 저는 매우 만족합니다. 아직 저는 꽃피지 못한 꽃망울 같은 사람입니다. 제게 물과 햇빛, 관심으로 좋은 웹 퍼블리셔가 될 수 있도록 도와 주신다면 이게 걸맞는 사람이 되어 꽃 필 수 있도록 하겠습니다.</p>
         </div>
         <div>
             <img src="" alt="">
             <p></p>
         </div>
     </div>
-    <div id="subsMe" class="w1330">
+    <div id="subsMe" class="">
         <h2>Subscribe Me</h2>
-        <div>
-            <div><button type="button"><img src="../images/common/subscribe8.png" alt=""></button></div>
-            <div><button type="button"><img src="../images/common/love.png" alt=""></button></div>
-            <div><button type="button"><img src="../images/common/notification.png" alt=""></button></div>
-            <div><button type="button"><img src="../images/common/contact.png" alt=""></button></div>
+        <div class="d_f subs_btn w1330">
+            <div class="p_r d_f">
+                <button type="button" class="btn1"></button>
+                <ul>
+                    <li>저를 구독해주세요!</li>
+                    <li>항상 노력하겠습니다</li>
+                    <li>
+                        <button type="button">이훈 구독하기</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="p_r d_f">
+                <button type="button" class="btn2"></button>
+                <ul>
+                    <li>저를 좋아해주세요!</li>
+                    <li>저를 더 성장시켜 준답니다</li>
+                    <li>
+                        <a href="https://www.saramin.com/" target="_blank" title="사람인 홈페이지 새 창 열기">SNS에 관심주기</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="p_r d_f">  
+                <button type="button" class="btn3"></button>
+                <ul>
+                    <li>저에게 알려주세요!</li>
+                    <li>좋은 소식을 기다리고 있습니다</li>
+                    <li>
+                        <a href="https://www.saramin.co.kr/" target="_blank" title="사람인 홈페이지 새 창 열기">좋은 소식 알려주기</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="p_r d_f">
+                <button type="button" class="btn4"></button>
+                <ul>
+                    <li>저에게 연락해주세요!</li>
+                    <li>언제든 연락을 주세요</li>
+                    <li>
+                        <a href="https://open.kakao.com/o/sYtlwcod">카톡으로 연락하기</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+    <footer id="footer" class="w1330">
+        <p>Lee Hoon 2021 Web Publishing Portfolio | My Fxxxxx Life</p>
+        <p>Copyright &copy; LEE HOON. All Right Reserved.</p>
+    </footer>
 </body>
