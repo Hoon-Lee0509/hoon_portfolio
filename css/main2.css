@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* #main */
+#main{width: 100vw; height: 100vh; background: url("../images/index_outro/main_bg_flower_1920.jpg") no-repeat center top; background-size: cover;color: #f4f4f4;}
+#main div.p_a{top: 300px; left: 300px; padding: 0 20px;}
+#main p{font-size: 24px;}
+#main img{display: block; width: 685px; height: 132px;}
+#main .text1{margin: 0 0 10px 180px;}
+#main .text2{color: #fff09f; margin-top: 20px;}
+#main .text3{bottom: 50px; left: 300px;font-size: 16px;line-height: 24px;}
+
+/* #intro */
+#intro{width: 100vw; height: 1000px; background: url("../images/index_outro/intro_1920_bg.png") no-repeat left top; background-size: cover;}
+#intro article{justify-content: space-evenly; padding: 150px 20px; text-align: center;}
+#intro .frame{width: 450px;height: 700px; border-radius: 225px; background: url("../images/index_outro/intro_bg_resize.jpeg") no-repeat center; background-size: cover;}
+#intro .intro_txt{width: 480px;font-size: 18px;}
+#intro .intro_txt h3{margin-top: 150px; font-size: 48px;}
+#intro .intro_txt p:first-of-type{margin-top: 150px;}
+#intro .intro_txt p:last-of-type{margin-top: 80px;}
+
+/* #introduction */
+#introduction{background-color: #1e1e1e; color: #f4f4f4; width: 100vw;}
+#introduction h3{font-size: 24px; margin:100px 0 0 20px;}
+
+/* sticky */
+#introduction .introduces{height: 1300vh;}
+#introduction .sticky{position: -webkit-sticky; position: sticky; top: 0; height: 100vh; background-color: #2f4364;}
+#introduction .text_wrap{position: relative; height: 100%;}
+#introduction .text_wrap div{position: absolute; top: 0; left: 0; font-size: 5vw; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: opacity 0.2s;}
+#introduction .text_wrap .five{font-size: 10vw;}
+#introduction .text_wrap .four{font-size: 20vw;}
+#introduction .text_wrap .three{font-size: 40vw;}
+#introduction .text_wrap .text_up{margin-top: 400px; background: none;}
+#introduction .text_wrap div.on{opacity: 1;}
+
+#introduction .tabgroup{display: flex; justify-content: center; margin: 150px 0 0;}
+#introduction .tabgroup .tab{width: 320px;height: 50px; line-height: 50px; background: #2f4364; cursor: pointer; text-align: center;}
+#introduction .tabbg{position: relative; width: 1280px; height: 600px; overflow: hidden; margin: 0 auto;}
+#introduceTab .tabpanel{position: absolute; top: 0; left: 0; background: #a3b1ca; color: #2f4364;width: 1280px;height: 600px; margin: 0 auto; visibility: hidden;}
+#introduceTab .tabpanel.active{visibility: visible;}
+#introduceTab .tabpanel:not(#tabpanel1) div{display: block; padding: 50px; font-size: 20px;}
+#introduceTab .tabpanel:not(#tabpanel1) div p{width: 1180px; height: 500px; overflow-y: scroll;background: #f4f4f4;}
+
+#introduceTab .tabpanel .skill{display: flex; justify-content: space-around; margin: 0 auto; padding-top: 50px; flex-wrap: wrap;}
+#introduceTab .tabpanel .skill .skill_bg{width: 600px;height: 70px; border-radius: 35px; background: #9b9b9b;}
+#introduceTab .tabpanel .skill li .skill_gauge{width: 70px; height: 70px; border-radius: 35px; transition: width 1s;}
+#introduceTab .tabpanel .skill li.html .skill_gauge.on{width: 550px; background: #e93e30;}
+#introduceTab .tabpanel .skill li.css .skill_gauge.on{width: 500px; background: #35a8db;}
+#introduceTab .tabpanel .skill li.js .skill_gauge.on{width: 450px; background: #ffda3e;}
+#introduceTab .tabpanel .skill li.ps .skill_gauge.on{width: 500px; background: #31a8ff;}
+#introduceTab .tabpanel .skill li.ai .skill_gauge.on{width: 400px; background: #fe9900;}
+#introduceTab .tabpanel .skill li.xd .skill_gauge.on{width: 450px; background: #fd60f3;}
+#introduceTab .tabpanel .skill li p{font-size: 14px; padding: 25px;}
+#introduceTab .tabpanel .skill .skill_btn{width: 70px; height: 70px;}
+#introduceTab .tabpanel .skill .skill_btn img{display: block; width: 100%; height: 100%;}
+
+#introduceTab .tab:hover, #introduceTab .tab:focus, #introduceTab .tab.active{background: #a3b1ca; color: #2f4364;}
+
+#workShow .slick-slide{width: 1280px;}
+#workShow .slick-wrapper{width: 1280px; margin: 50px auto;}
+#workShow .slick-wrapper .slick-slide img{width: 100%; padding: 50px; box-sizing: border-box;}
+#workShow .slick-wrapper .slick-slide a{display: block; text-align: center; font-size: 14px; margin-top: 20px;}
+#workShow .slick-wrapper .slide_bg{width: 700px; height: 518px; background: no-repeat center; background-size: contain; margin: 0 auto;}
+#workShow .slick-wrapper .slide_bg1{background-image: url("../images/mock-up/KGR_fest_iMac.png");}
+#workShow .slick-wrapper .slide_bg2{background-image: url("../images/mock-up/KGR_lib_iMac.png");}
+#workShow .slick-wrapper .slide_bg3{background-image: url("../images/mock-up/theh_iMac.png");}
+#workShow .slick-wrapper .slide_bg4{background-image: url("../images/mock-up/theh_iPad_Pro_2.png");}
+#workShow .slick-wrapper .slide_bg5{background-image: url("../images/mock-up/theh_iphone.png");}
+#workShow p{font-size: 24px; margin-left: 20px;}
+#workShow .controller{justify-content: space-around; text-align: center; margin: 0 auto; width: 150px; height: 30px; border: 1px solid #f4f4f4; border-radius: 15px;}
+#workShow .controller button{width: 71px; height: 26px; line-height: 26px; margin-top: 2px;  border-radius: 14px; box-sizing: border-box; transition: all 0.5s;}
+#workShow .controller button.on{background: #f4f4f4; color: #1e1e1e;}
+.slick-next::before, .slick-prev::before{border-color:#f4f4f4; }
+.slick-prev{left: 530px;}
+.slick-next{right: 530px;}
+.slick-prev:hover::before, .slick-prev:focus::before,.slick-next:hover::before, .slick-next:focus::before{background: #f4f4f4; color: #1e1e1e;}
+
+
+/* 870 749 */

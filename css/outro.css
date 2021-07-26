@@ -1,5 +1,65 @@
 @charset "utf-8";
 
-#outro, #subsMe{width: 100vw; height: 100vh;}
-#outro{background: #00f;}
-#subsMe{background: #f50a32;}
+body{background: #f4f4f4;}
+
+/* common */
+#outro, #subsMe{width: 100vw;}
+
+
+
+/* outro */
+#outro{background: rgb(222, 222, 255);height: 100vh;}
+#outro h2, #subsMe h2{padding: 200px 0 80px; text-align: center; font-size: 36px; font-family: GyeonggiBatang; background: url("../images/common/style_black.png") no-repeat center 30%; background-size: 5%;}
+#outro div{text-align: center;}
+#outro div p{margin: 80px auto; width: 500px; word-break: keep-all; font-size: 16px; line-height: 24px;}
+
+/* subsMe */
+#subsMe .subs_btn{justify-content: center; margin: 60px auto 80px;}
+#subsMe .subs_btn > div{width: 330px;}
+#subsMe .subs_btn > div > button{width: 80px; height: 80px; background: no-repeat center; background-size: contain; transition: all 0.5s;}
+#subsMe .subs_btn .btn1{background-image: url("../images/common/subscribe8.png");}
+#subsMe .subs_btn .btn2{background-image: url("../images/common/love.png");}
+#subsMe .subs_btn .btn3{background-image: url("../images/common/notification.png");}
+#subsMe .subs_btn .btn4{background-image: url("../images/common/contact.png");}
+#subsMe .subs_btn .btn1:hover{background-image: url("../images/common/subscribe6.png");}
+#subsMe .subs_btn .btn2:hover{background-image: url("../images/common/love2.png");}
+#subsMe .subs_btn .btn3:hover{background-image: url("../images/common/notification2.png");}
+#subsMe .subs_btn .btn4:hover{background-image: url("../images/common/contact2.png");}
+#subsMe .subs_btn ul{visibility: hidden; opacity: 0; transition: all 0.4s; width: 160px; height: 80px; line-height: 28px; text-align: left;}
+#subsMe .subs_btn ul.on{ visibility: visible; opacity: 1;padding-left: 20px;}
+#subsMe .subs_btn ul li button, #subsMe .subs_btn ul li a{display: block; border: 1px solid #000; border-radius: 50px; text-align: center; width: 120px; height: 30px; transition: all 0.5s;}
+#subsMe .subs_btn ul li:hover button, #subsMe .subs_btn ul li:hover a{background: #1e1e1e; color: #f4f4f4;}
+/* #footer */
+#footer{background: #f4f4f4; color: #1e1e1e;}
+#footer p:first-of-type::before{background: #1e1e1e;}
+
+.fade .fade_up{transform: translate(0,100px); opacity: 0; transition: all 0.5s;}
+.fade.on .fade_up{transform: translate(0,0); opacity: 1;}
+.fade .fade_right{transform: translate(-100px,0); opacity: 0; transition: all 0.5s;}
+.fade.on .fade_right{transform: translate(0,0); opacity: 1;}
+.delay-3{transition-delay: 0.5s !important;}
+.delay-6{transition-delay: 1s !important;}
+
+#dim, .md_cnt{position: fixed; z-index: 1000;}
+#dim{display: none; top: 0; left: 0; width: 100%; height: 100%; background: rgba(30, 30, 30, 0.5);}
+.md_cnt{top: 50%; left: 50%; transform: translate(-50%, -50%); background: #f4f4f4; padding: 50px;margin: 0 auto; text-align: center; border-radius: 20px; visibility: hidden;}
+
+#modal1{width: 800px; height: 500px;}
+#modal1 img{border-radius: 10px;}
+#modal1 p{margin-top: 30px; line-height: 24px;}
+#modal1 .md_close_btn{top: 10px; right: 10px; width: 60px; height: 30px;line-height: 30px; font-size: 14px; background: #2f4364; color: #f4f4f4; text-align: center; border-radius: 15px;}
+
+#modal2{width: 800px; height: 450px;}
+#modal2 video{border-radius: 10px;}
+#modal2 p{margin-top: 30px; line-height: 24px;}
+#modal2 .md_close_btn{top: 10px; right: 10px; width: 60px; height: 30px;line-height: 30px; font-size: 14px; background: #2f4364; color: #f4f4f4; text-align: center; border-radius: 15px;}
+
+
+#modal3{width: 800px; height: 420px;}
+#modal3 img{width: 300px; height: 300px; border-radius: 10px;}
+#modal3 p{margin-top: 30px; line-height: 24px;}
+#modal3 a{position: relative; display: block; margin: 30px auto;  color: #aaa; font-weight: 700; width: 190px;  transition: all 0.5s;}
+#modal3 a::after{content: ""; position: absolute; bottom: -3px; left: 0; width: 0px; height: 2px; background: transparent;transition: all 0.5s;} 
+#modal3 a:hover, #modal3 a:focus{color: #2f4364;}
+#modal3 a:hover::after, #modal3 a:focus::after{width: 190px; background: #2f4364;}
+#modal3 .md_close_btn{top: 10px; right: 10px; width: 60px; height: 30px;line-height: 30px; font-size: 14px; background: #2f4364; color: #f4f4f4; text-align: center; border-radius: 15px;}

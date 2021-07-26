@@ -14,33 +14,63 @@
 #intro article{justify-content: space-evenly; padding: 150px 20px; text-align: center;}
 #intro .frame{width: 450px;height: 700px; border-radius: 225px; background: url("../images/index_outro/intro_bg_resize.jpeg") no-repeat center; background-size: cover;}
 #intro .intro_txt{width: 480px;font-size: 18px;}
-#intro .intro_txt h3{margin-top: 150px; font-size: 48px;}
+#intro .intro_txt h3{margin-top: 150px; font-size: 48px; font-family: GyeonggiBatang;}
+#intro .intro_txt p{font-size: 14px;}
 #intro .intro_txt p:first-of-type{margin-top: 150px;}
 #intro .intro_txt p:last-of-type{margin-top: 80px;}
 
 /* #introduction */
 #introduction{background-color: #1e1e1e; color: #f4f4f4; width: 100vw;}
 #introduction h3{font-size: 24px; margin:100px 0 0 20px;}
-#introduction .introduces{height: 1200vh;}
-#introduction .sticky{position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh; background-color: #2f4364;}
-#introduction .text_wrap{position: relative; height: 100%; overflow: hidden;}
-#introduction .text_wrap div{top: 0; left: 0; font-size: 5vw; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: all 0.2s;}
-#introduction .text_wrap .five{font-size: 10vw;}
-#introduction .text_wrap .four{font-size: 20vw;}
-#introduction .text_wrap .three{font-size: 40vw;}
 
-#introduction .text_wrap .fest_bg, #introduction .text_wrap .lib_bg,#introduction .text_wrap .theh_bg{background: no-repeat center; background-size: 50%;}
+/* sticky */
+#introduction .introduces{height: 1100vh;}
+#introduction .sticky{position: -webkit-sticky; position: sticky; top: 0; height: 100vh; background-color: #2f4364;}
+#introduction .text_wrap{position: relative; height: 100%; background: no-repeat center;background-size: cover;}
+#introduction .text_wrap div{position: absolute; top: 0; left: 0; font-size: 5vw; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: opacity 0.2s;}
+#introduction .text_wrap .conan_bg{background-image: url("../images/index_outro/conan_bg.jpg"); background-size: cover; color: #f4f4f4;}
+#introduction .text_wrap .pub_bg{background-image: url("../images/index_outro/pub_bg.jpg"); color: #1e1e1e;}
+#introduction .text_wrap .work_bg{background-image: url("../images/index_outro/work_bg.png"); background-size: cover;}
+#introduction .text_wrap .count ul.d_f{justify-content: space-around; width: 900px; height: 300px; border-radius: 150px; background: #999; margin: 250px auto;}
+#introduction .text_wrap .count ul li{width: 280px; height: 280px; border-radius: 140px; margin-top: 10px;}
+
+#introduction .text_wrap .five ul .red_light{background-color: #e4321a;}
+#introduction .text_wrap .five ul .yel_light{background-color: rgba(244, 188, 84, 0.3);}
+#introduction .text_wrap .five ul .grn_light{background-color: rgba(99, 194, 87, 0.3);}
+
+#introduction .text_wrap .four ul .red_light{background-color: rgba(234, 108, 91, 0.3);}
+#introduction .text_wrap .four ul .yel_light{background-color: #eccd18;}
+#introduction .text_wrap .four ul .grn_light{background-color: rgba(99, 194, 87, 0.3);}
+
+#introduction .text_wrap .three ul .red_light{background-color: rgba(234, 108, 91, 0.3);}
+#introduction .text_wrap .three ul .yel_light{background-color: rgba(244, 188, 84, 0.3);}
+#introduction .text_wrap .three ul .grn_light{background-color: #29c415;}
 
 #introduction .text_wrap div.on{opacity: 1;}
-#introduction .tabgroup{display: flex; justify-content: center; margin: 150px 0 0;}
-#introduction .tabgroup .tab{width: 320px;height: 50px; line-height: 50px; background: #2f4364; cursor: pointer; text-align: center;}
+
+#introduction .introduce_tab{padding-top: 150px;}
+#introduction .tit_bg{width: 1280px; height: 50px; border-radius: 10px 10px 0 0; background: #EFF4F8; margin: 0 auto; position: relative; line-height: 50px; border-bottom: 1px solid #ced1d3;}
+#introduction .tit_bg h3{position: absolute; top: calc(50% - 15px); left: calc(50% - 400px); font-size: 14px ; text-align: center; width: 800px; height: 30px; background: #DFE8EF; line-height: 30px; color: #1e1e1e; border-radius: 4px; margin: 0 auto;}
+#introduction .tit_bg .web_btn{position: absolute; top: calc(50% - 7px); width: 14px; height: 14px; border-radius: 10px;}
+#introduction .tit_bg .bg_red{left: 20px; background: #EA6B5B;}
+#introduction .tit_bg .bg_yellow{left: 45px;background: #F4BC54;}
+#introduction .tit_bg .bg_green{left: 70px;background: #63C257;}
+#introduction .tit_bg .web_btn:hover::before{content: ""; position: absolute; top: calc(50% - 3.5px); left: calc(50% - 3.5px); width: 7px; height: 7px; background: rgba(161, 161, 161, 0.7); border-radius: 3.5px;}
+#introduction .tabgroup{display: flex; justify-content: center; margin: 0;}
+#introduction .tabgroup .tab{width: 320px;height: 40px; line-height: 40px; background: #BEC6C8; cursor: pointer; text-align: center; position: relative;}
+#introduction .tabgroup .tab::before{content: ""; position: absolute; top: calc(50% - 10px); left: 20px; width: 20px; height: 20px; background: no-repeat center; background-size: cover;}
+#introduction .tabgroup #tab1::before{background-image: url("../images/index_outro/html.png");}
+#introduction .tabgroup #tab2::before{background-image: url("../images/index_outro/sone.png");}
+#introduction .tabgroup #tab3::before{background-image: url("../images/index_outro/different.png");}
+#introduction .tabgroup #tab4::before{background-image: url("../images/index_outro/look.png");}
+#introduction .tabgroup li + li::after{content: ""; position: absolute; top: calc(50% - 10px); left: -1px; width: 2px; height: 20px; background: #aaa;}
 #introduction .tabbg{position: relative; width: 1280px; height: 600px; overflow: hidden; margin: 0 auto;}
-#introduceTab .tabpanel{position: absolute; top: 0; left: 0; background: #a3b1ca; color: #2f4364;width: 1280px;height: 600px; margin: 0 auto; visibility: hidden;}
+#introduceTab .tabpanel{position: absolute; top: 0; left: 0; background: #EFF4F8; color: #1e1e1e;width: 1280px;height: 600px; margin: 0 auto; visibility: hidden; border-radius: 0 0 10px 10px;}
 #introduceTab .tabpanel.active{visibility: visible;}
 #introduceTab .tabpanel:not(#tabpanel1) div{display: block; padding: 50px; font-size: 20px;}
-#introduceTab .tabpanel:not(#tabpanel1) div p{width: 1180px; height: 500px; overflow-y: scroll;background: #f4f4f4;}
+#introduceTab .tabpanel:not(#tabpanel1) div p{width: 1180px; height: 500px; overflow-y: scroll;background: #f6ffee; padding: 10px 0 0 10px;}
 
-#introduceTab .tabpanel .skill{display: flex; justify-content: space-around; margin: 0 auto; padding-top: 50px; flex-wrap: wrap;}
+#introduceTab .tabpanel .skill{display: flex; justify-content: space-around; margin: 0 auto; padding-top: 80px; flex-wrap: wrap;}
 #introduceTab .tabpanel .skill .skill_bg{width: 600px;height: 70px; border-radius: 35px; background: #9b9b9b;}
 #introduceTab .tabpanel .skill li .skill_gauge{width: 70px; height: 70px; border-radius: 35px; transition: width 1s;}
 #introduceTab .tabpanel .skill li.html .skill_gauge.on{width: 550px; background: #e93e30;}
@@ -53,10 +83,11 @@
 #introduceTab .tabpanel .skill .skill_btn{width: 70px; height: 70px;}
 #introduceTab .tabpanel .skill .skill_btn img{display: block; width: 100%; height: 100%;}
 
-#introduceTab .tab:hover, #introduceTab .tab:focus, #introduceTab .tab.active{background: #a3b1ca; color: #2f4364;}
+#introduceTab .tab:hover, #introduceTab .tab:focus, #introduceTab .tab.active{background: #EFF4F8; color: #2f4364;}
 
-#workShow .slick-slide{width: 750px;}
-#workShow .slick-wrapper{width: 750px; margin: 50px auto;}
+
+#workShow .slick-slide{width: 1280px;}
+#workShow .slick-wrapper{width: 1280px; margin: 50px auto;}
 #workShow .slick-wrapper .slick-slide img{width: 100%; padding: 50px; box-sizing: border-box;}
 #workShow .slick-wrapper .slick-slide a{display: block; text-align: center; font-size: 14px; margin-top: 20px;}
 #workShow .slick-wrapper .slide_bg{width: 700px; height: 518px; background: no-repeat center; background-size: contain; margin: 0 auto;}
@@ -69,12 +100,7 @@
 #workShow .controller{justify-content: space-around; text-align: center; margin: 0 auto; width: 150px; height: 30px; border: 1px solid #f4f4f4; border-radius: 15px;}
 #workShow .controller button{width: 71px; height: 26px; line-height: 26px; margin-top: 2px;  border-radius: 14px; box-sizing: border-box; transition: all 0.5s;}
 #workShow .controller button.on{background: #f4f4f4; color: #1e1e1e;}
-
-/* #footer */
-#footer{width: 100vw; height: 300px; background: #1e1e1e; color: #f4f4f4; text-align: center;}
-#footer p:first-of-type{position: relative; padding-top: 150px;}
-#footer p:first-of-type::before{content: ""; position: absolute; top: 100px; left: calc(50% - 665px); width: 1330px; height: 2px; background: #f4f4f4;}
-#footer p:nth-of-type(2){padding-top: 40px;}
-
-
-/* 870 749 */
+.slick-next::before, .slick-prev::before{border-color:#f4f4f4; }
+.slick-prev{left: 530px;}
+.slick-next{right: 530px;}
+.slick-prev:hover::before, .slick-prev:focus::before,.slick-next:hover::before, .slick-next:focus::before{background: #f4f4f4; color: #1e1e1e;}
