@@ -26,7 +26,7 @@
 #introduction h3{font-size: 24px; margin:100px 0 0 20px;}
 
 /* sticky */
-#introduction .introduces{height: 1200vh;}
+#introduction .introduces{height: 1300vh;}
 #introduction .sticky{position: -webkit-sticky; position: sticky; top: 0; height: 100vh; background-color: #2f4364;}
 #introduction .text_wrap{position: relative; height: 100%; background: no-repeat center;background-size: cover;}
 #introduction .text_wrap div{position: absolute; top: 0; left: 0; font-size: 5vw; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: opacity 0.2s;}
@@ -52,7 +52,7 @@
 #introduction .text_wrap div.on{opacity: 1;}
 
 /* tab */
-#introduction .introduce_tab{padding-top: 150px;}
+#introduction .introduce_tab{padding-top: 250px;}
 #introduction .tit_bg{width: 1280px; height: 50px; border-radius: 10px 10px 0 0; background: #EFF4F8; margin: 0 auto; position: relative; line-height: 50px; border-bottom: 1px solid #ced1d3;}
 #introduction .tit_bg h3{position: absolute; top: calc(50% - 15px); left: calc(50% - 400px); font-size: 14px ; text-align: center; width: 800px; height: 30px; background: #DFE8EF; line-height: 30px; color: #1e1e1e; border-radius: 4px; margin: 0 auto;}
 #introduction .tit_bg .web_btn{position: absolute; top: calc(50% - 7px); width: 14px; height: 14px; border-radius: 10px;}
@@ -111,5 +111,4 @@
 .slick-next{right: 530px;}
 .slick-prev:hover::before, .slick-prev:focus::before,.slick-next:hover::before, .slick-next:focus::before{background: #f4f4f4; color: #1e1e1e;}
 
-::-webkit-scrollbar {width: 4px;}
 ::-webkit-scrollbar-thumb {background-color: #2f4364;}
