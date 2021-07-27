@@ -72,10 +72,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let timer = setInterval(clock, 1000);
 
-  document.querySelector('#btn').addEventListener('click', function () {
-    clearInterval(timer);
-    digEle.style.cssText = 'background-color: blue;color: yellow';
+
+  $('.d_mode').on('click', function () {
+    $('body').addClass('dark_on');
+    $(this).css({display: 'none'}).prev('.l_mode').css({display: 'block'});
+    $('.res_list').children('li:first-child').children('img').attr({src: "../images/common/mobile_white.png"})
+    $('.res_list').children('li:nth-child(2)').children('img').attr({src: "../images/common/tablet_white.png"})
+    $('.res_list').children('li:last-child').children('img').attr({src: "../images/common/pc_white.png"})
+    $('.html_icon').attr({src: "../images/common/html_white.png"});
   });
 
-
+  $('.l_mode').on('click', function () {
+    $('body').removeClass('dark_on');
+    $(this).css({display: 'none'}).next('.d_mode').css({display: 'block'});
+    $('.res_list').children('li:first-child').children('img').attr({src: "../images/common/mobile.png"})
+    $('.res_list').children('li:nth-child(2)').children('img').attr({src: "../images/common/tablet.png"})
+    $('.res_list').children('li:last-child').children('img').attr({src: "../images/common/pc.png"})
+    $('.html_icon').attr({src: "../images/common/html.png"});
+  });
 });

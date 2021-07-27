@@ -39,7 +39,7 @@ body{background: #f4f4f4;}
 .slick-prev:before, .slick-next:before{color: #1e1e1e;}
 #conSlide .controller{justify-content: space-around; text-align: center; margin: 0 auto; width: 150px; height: 30px; border: 1px solid; border-radius: 15px; margin-top: 60px;}
 #conSlide .controller button{width: 71px; height: 26px; line-height: 26px; margin-top: 2px;  border-radius: 14px; box-sizing: border-box; transition: all 0.5s;}
-#cnt3 .con_color > div.d_f{margin-top: 50px; justify-content: space-around;}
+#cnt3 .con_color > div.d_f{margin-top: 50px; justify-content: space-evenly;}
 #cnt3 .con_color .hover_bg{width: 200px; height: 200px; border-radius: 3px; margin: 0 auto; border-radius: 125px; line-height: 150px;}
 #cnt3 .con_color .cl_bg p{font-family: NanumSquareRound;font-size: 36px;}
 #cnt3 .con_color .cl_bg .c_txt{top: calc(50% - 32px); left: calc(50% - 77px); color: #f2f2f2; text-align: center;}
@@ -71,5 +71,11 @@ body{background: #f4f4f4;}
 
 /* #sideBar */
 #sideBar{font-size: 12px;}
-.top{right: 5px; bottom: 5px; width: 40px; height: 40px; line-height: 40px; text-align: center; display: block;border-radius: 10px; transition: all 0.5s;}
-#digital{right: -45px;bottom: 50%; width: 150px; height: 40px; color: #aaa; transform: rotate(90deg); text-align: center; background: #ddd; border-radius: 10px; line-height: 20px;}
+.d_mode, .l_mode, .top{right: 5px; width: 40px; height: 40px; line-height: 40px; display: block;border-radius: 10px; transition: all 0.5s;text-align: center;}
+.top{bottom: 5px;}
+.d_mode,.l_mode{bottom: 55px;}
+#digital{top: 0; left: calc(50% - 75px);width: 150px; height: 40px; color: #f4f4f4; text-align: center; border-radius: 10px; line-height: 20px; z-index: 1100;}
+body.dark_on h2, body.dark_on h3{color: #f9f9f9 !important;}
+body.dark_on #footer{background: #1e1e1e;}
+body.dark_on #footer p{color: #f4f4f4;}
+body.dark_on #footer p:first-of-type::before{background: #f4f4f4;}

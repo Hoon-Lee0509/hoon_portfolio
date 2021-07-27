@@ -36,5 +36,11 @@
 #footer p:first-of-type::before{background: #365902;}
 
 /* #sideBar */
-#sideBar .top{background: #365902; color: #F2BC8D;}
+#sideBar button{background: #365902; color: #F2BC8D;}
 #sideBar button:hover, #sideBar a:hover{background: #F2BC8D; color: #365902;}
+
+body.dark_on{background: #1e1e1e; color: #f4f4f4;}
+body.dark_on #cnt1 a:hover, body.dark_on #cnt1 a:focus{background: #F2BC8D; color: #365902;}
+body.dark_on #cnt4 strong, body.dark_on #cnt5 strong, body.dark_on #cnt6 strong{color: #F2BC8D;}
+
+::-webkit-scrollbar-thumb {background-color: #365902;}

@@ -55,8 +55,8 @@ body{font-family: "나눔고딕", "NanumGothic", "Noto Sans KR", sans-serif; fon
 #header{top: 0; left: 0; width: 100vw; height: 40px; background: rgba(47, 67, 100, 0.568); z-index: 900; display: none;}
 #header.on{display: block;}
 #header a{display: block;}
-#header .logo{top: 0; left: 20px; width: 80px;height: 40px;}
-#header .logo img{display: block; width: 145px; height: 40px;}
+#header .logo{top: 2px; left: 20px; width: 188px;height: 36px;}
+#header .logo img{display: block; width: 188px; height: 36px;}
 #header .gnb_open_btn{top: 5px; right: 20px; width: 100px; height: 30px; color: #f4f4f4;line-height: 30px; font-size: 18px;}
 #header .gnb_open_btn img{width: 30px; height: 30px;}
 
@@ -66,9 +66,13 @@ body{font-family: "나눔고딕", "NanumGothic", "Noto Sans KR", sans-serif; fon
 #gnb .gnb_close_btn img{width: 30px; height: 30px;}
 #gnb .gnb_group{text-align: center;}
 #gnb .gnb_group > a{padding-top: 150px;}
-#gnb ul{width: 1330px; margin: 80px auto; text-align: left; font-family: GyeongGiBatang;}
-#gnb ul li{padding-top: 70px; font-size: 36px;}
-#gnb ul li:hover a, #gnb ul li a:focus{color: #2f4364;}
+#gnb ul{width: 800px; height: 100vh; margin: 80px auto; text-align: left; font-family: GyeongGiBatang;}
+#gnb ul li{position: relative; width: 400px; height: 70px; line-height: 70px;}
+#gnb ul li::after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 70px;background: url("../images/common/depth_hover.png") no-repeat left center; background-size: contain; opacity: 0; transition: all 0.5s; z-index: -10;}
+#gnb ul li:hover::after, #gnb ul li:focus::after{opacity: 1; width: 400px;}
+#gnb ul li + li{margin-top: 40px;font-size: 36px;}
+#gnb ul li a{display: block; transition: all .5s;}
+#gnb ul li:hover a, #gnb ul li a:focus{color: #f4f4f4;}
 #gnb.on{visibility: visible;}
 
 .slick-arrow{bottom: -40px; width: 60px; height: 20px;display: block;z-index: 200;}
@@ -97,3 +101,6 @@ body{font-family: "나눔고딕", "NanumGothic", "Noto Sans KR", sans-serif; fon
 #footer p:first-of-type::before{content: ""; position: absolute; top: 100px; left: calc(50% - 665px); width: 1330px; height: 2px; background: #f4f4f4;}
 #footer p:nth-of-type(2){padding-top: 40px;}
 
+::-webkit-scrollbar {width: 4px;}
+::-webkit-scrollbar-thumb {background-color: #f4f4f4; border-radius: 2px;}
+::-webkit-scrollbar-track {background-color: #1e1e1e;}
