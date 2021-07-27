@@ -26,14 +26,10 @@
 #cnt4 strong, #cnt5 strong, #cnt6 strong{color: #A65F21;}
 
 /* #cnt5 */
-#cnt5 .device{height: 783px;}
+#cnt5 .device{width: 780px;}
 
 /* #cnt6 */
-#cnt6 .device{text-align: center; margin: 0 auto;}
-#cnt6 div.p_a{bottom: 0; left: 200px; word-break: keep-all;}
-#cnt6 strong{padding-left: 180px;}
-#cnt6 p{width: 360px;}
-#cnt6 ul{padding-left: 120px;}
+
 
 /* #footer */
 #footer p{color: #365902;}

@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.skill_btn').on('click', function () {
-        $(this).parent().toggleClass('on');
+        $(this).parent().toggleClass('on').parent().next('p').toggleClass('on');
+
     });
 
     $('.tab:first-of-type, .tabpanel:first-of-type').addClass('active').attr({tabIndex: 0});

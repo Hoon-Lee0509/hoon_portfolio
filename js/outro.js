@@ -3,21 +3,6 @@ $(document).ready(function () {
         $(this).next().toggleClass('on');
     });
 
-    $(window).on('scroll', function () {
-      var scrollY = $(this).scrollTop() + $(this).height() * 4/5;
-      console.log(scrollY);
-  
-      $('.fade').each(function (idx) {
-        if (scrollY > $(this).offset().top) {
-          $(this).addClass('on');
-        } else { 
-          $(this).removeClass('on');
-        }
-      });
-    });
-    
-    $(window).trigger('scroll');
-
     $('.md_open_btn').on('click', function () {
          const $openBtn = $(this);
          const $mdCnt = $($(this).attr('data-href'));

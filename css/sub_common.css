@@ -50,29 +50,26 @@ body{background: #f4f4f4;}
 /* cnt4-6 공통 */
 #cnt4, #cnt5, #cnt6{word-break: keep-all;}
 #cnt4 h2, #cnt5 h2, #cnt6 h2{font-size: 36px; font-weight: 700; font-family: NanumSquareRound; margin: 150px 0 50px; text-align: center; color: #555;}
-#cnt4 .device, #cnt5 .device, #cnt6 .device{display: block; width: 780px; height: 656px;}
-#cnt4 .d_f, #cnt5 .d_f{justify-content: space-between;}
-#cnt4 .d_f div, #cnt5 .d_f div{width: 420px; margin-top: 200px;}
-#cnt4 .d_f div strong, #cnt5 .d_f div strong, #cnt6 strong{height: 70px; line-height: 70px; font-size: 24px; font-family: NanumSquareRound;}
-#cnt4 .d_f div p, #cnt5 .d_f div p, #cnt6 p{margin-bottom: 20px; line-height: 24px;}
-#cnt4 .d_f div ul, #cnt5 .d_f div ul, #cnt6 ul{margin-top: 20px; line-height: 24px;}
+#cnt4 .device, #cnt5 .device, #cnt6 .device{display: block; width: 780px;}
+#cnt4 .d_f, #cnt5 .d_f, #cnt6 .d_f{justify-content: space-between;}
+#cnt4 .d_f div, #cnt5 .d_f div, #cnt6 .d_f div{width: 420px; margin-top: 200px;}
+#cnt4 .d_f div strong, #cnt5 .d_f div strong, #cnt6 .d_f div strong{height: 70px; line-height: 70px; font-size: 24px; font-family: NanumSquareRound;}
+#cnt4 .d_f div p, #cnt5 .d_f div p, #cnt6 .d_f div p{margin-bottom: 20px; line-height: 24px;}
+#cnt4 .d_f div ul, #cnt5 .d_f div ul, #cnt6 .d_f div ul{margin-top: 20px; line-height: 24px;}
 /* #cnt4 */
-#cnt4 .d_f div{text-align: right;}
+#cnt4 .d_f div, #cnt6 .d_f div{text-align: right;}
 
 /* #cnt5 */
 
 /* #cnt6 */
 #cnt6{margin-bottom: 150px;}
-#cnt6 .device{text-align: center; margin: 0 auto;}
-#cnt6 div.p_a{bottom: 0; left: 200px; word-break: keep-all;}
-#cnt6 strong{padding-left: 180px;}
-#cnt6 p{width: 360px;}
-#cnt6 ul{padding-left: 120px;}
+
 
 /* #footer */
 #footer{background: #f4f4f4; color: #1e1e1e;}
 
 
 /* #sideBar */
-#sideBar{right: 5px; bottom: 5px; font-size: 12px;}
-#sideBar .top{width: 40px; height: 40px; line-height: 40px; text-align: center; display: block;border-radius: 10px; transition: all 0.5s;}
+#sideBar{font-size: 12px;}
+.top{right: 5px; bottom: 5px; width: 40px; height: 40px; line-height: 40px; text-align: center; display: block;border-radius: 10px; transition: all 0.5s;}
+#digital{right: -45px;bottom: 50%; width: 150px; height: 40px; color: #aaa; transform: rotate(90deg); text-align: center; background: #ddd; border-radius: 10px; line-height: 20px;}

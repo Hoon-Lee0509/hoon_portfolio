@@ -54,9 +54,9 @@
             <h2 class="blind">주메뉴</h2>
             <a href="#" class="gnb_close_btn"><img src="images/common/menu_resize.png" alt="">CLOSE</a>
             <ul>
-                <li><a href="#"><img src="images/logo/logo_white.png" alt="My Flower Life"></a></li>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="index.html"><img src="images/logo/logo_white.png" alt="My Flower Life"></a></li>
+                <li><a href="index.htmlintro">Intro</a></li>
+                <li><a href="index.html#introduction">Introduction</a></li>
                 <li><a href="work/work01_kgr.html">Work 01. 고구려대학교</a></li>
                 <li><a href="work/work02_theh.html">Work 02. 디에이치퍼니쳐</a></li>
                 <li><a href="sub/outro.html">Outro</a></li>
@@ -66,22 +66,28 @@
     </header>
     <section id="main" class="p_r">
         <h2 class="blind">메인화면</h2>
-        <div class="w1330 p_a">
-            <p class="text1">Lee Hoon 2021 Web Publishing PORTFOLIO</p>
-            <img src="images/logo/logo_3x_white.png" alt="My Flower Life">
-            <p class="text2">Can I be a Flower, too?</p>
+        <div class="w1330 p_a fade">
+            <p class="text1 fade_up delay-6">Lee Hoon 2021 Web Publishing PORTFOLIO</p>
+            <img src="images/logo/logo_3x_white.png" alt="My Flower Life" class="fade_right">
+            <p class="text2 fade_left delay-3">Can I be a Flower, too?</p>
         </div>
         <p class="text3 p_a">이 홈페이지는 1920px 해상도에 최적화 되어 있습니다.<br>최소 1330px 이상의 모니터에서 확인해주시는 것을 권장드립니다.</p>
     </section>
     <section id="intro">
-        <article class="w1330 d_f">
-            <div class="frame"></div>
-            <div class="intro_txt">
-                <h3 class="intro_tit">Intro. 시작하며</h3>
-                <p>우린 대체로 꽃을 좋아합니다.<br>
+        <video poster="../images/index_outro/rose_video.png" width="1920" height="1080"autoplay loop muted>
+            <source src="video/blossom.mp4" type="video/mp4">
+            <source src="video/blossom.webm" type="video/webm">
+            <source src="video/blossom.ogv" type="video/ogg">
+            동영상이 재생되지 않는다면 해당 브라우저가 동영상을 지원하지 않는 것입니다. 다른 브라우저를 이용해주시거나 업데이트 후 다시 확인해주세요.
+        </video>
+        <article class="w1330 d_f fade">
+            <div class="frame fade_left"></div>
+            <div class="intro_txt fade">
+                <h3 class="intro_tit fade_up">Intro. 시작하며</h3>
+                <p class="fade_up delay-3">우린 대체로 꽃을 좋아합니다.<br>
                     꽃은 누군가에겐 설렘과 사랑 또는 축하와 격려를<br>
                     또 누군가에겐 위로를 해주기도 합니다.</p>
-                <p>저도 누군가에게는 그런 꽃같은 존재가 되었으면 합니다.<br>
+                <p class="fade_up delay-6">저도 누군가에게는 그런 꽃같은 존재가 되었으면 합니다.<br>
                     꽃을 피는데 엄청난 시간이 걸리는 선인장 같이 묵묵히 <br>
                     이훈이라는 꽃을 피우기 위해 기다리고 준비하고 있습니다.</p>
             </div>
@@ -94,12 +100,13 @@
             <div class="introduces">
                 <div class="sticky">
                     <div class="text_wrap">
+                        <div>Introduction. 저를 소개합니다.</div>
                         <div class="conan_bg">제 이름은 이훈</div>
                         <div class="pub_bg">웹 퍼블리셔(가 되고 싶)죠</div>
-                        <div class="work_bg">저의 작업물을 보여드리겠습니다</div>
-                        <div class="work_bg">보신 후 구독(채용)은</div>
+                        <div class="work_bg">그럼 저의 작업물을 보여드리겠습니다</div>
+                        <div class="work_bg">보신 후 구독(채용)과 좋아요는</div>
                         <div class="work_bg">여러분들의 마음입니다</div>
-                        <div>그럼 저와 제 프로젝트를 보러 가시죠</div>
+                        <div>그럼 제 작업물을 보러 가시죠</div>
                         <div class="five count">
                             <ul class="d_f">
                                 <li class="red_light"></li>
@@ -226,7 +233,7 @@
             </div>
         </div>
         <article id="workShow" class="w1330">
-            <h3>$(‘#hoonWorks’).on(‘click’, () => {</h3>
+            <h3>$(Hoon).ready(function () {</h3>
                 <div class="slick-container">
                     <div class="slick-wrapper">
                         <div>
