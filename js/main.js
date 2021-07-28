@@ -53,10 +53,10 @@ $(document).ready(function() {
     });
 
     $('#tab1').on('click', function () {
-        $(this).parent().parent().prev().children().children('span').text('skill_사용하는 프로그램 및 주 사용 언어의 능력치입니다');
+        $(this).parent().parent().prev().children().children('span').text('ABOUT HOON_이훈에 대한 정보입니다');
     });
     $('#tab2').on('click', function () {
-        $(this).parent().parent().prev().children().children('span').text('덕질은 나의 힘_살아오며 덕질이 끼친 영향에 대하여');
+        $(this).parent().parent().prev().children().children('span').text('skill_사용하는 프로그램 및 주 사용 언어의 능력치입니다');
     });
     $('#tab3').on('click', function () {
         $(this).parent().parent().prev().children().children('span').text('틀림이 아닌 다름_서로 다름의 차이를 인정할 줄 압니다');

@@ -9,7 +9,7 @@ body{background: #f4f4f4;}
 #outro{background: rgb(222, 222, 255);height: 100vh;}
 #outro h2, #subsMe h2{padding: 200px 0 80px; text-align: center; font-size: 36px; font-family: GyeonggiBatang; background: url("../images/common/style_black.png") no-repeat center 30%; background-size: 5%;}
 #outro div{text-align: center;}
-#outro div p{margin: 80px auto; width: 500px; word-break: keep-all; font-size: 16px; line-height: 24px;}
+#outro div p{margin: 80px auto; width: 800px; word-break: keep-all; font-size: 18px; line-height: 30px;}
 
 /* subsMe */
 #subsMe .subs_btn{justify-content: center; margin: 60px auto 80px;}
@@ -31,10 +31,7 @@ body{background: #f4f4f4;}
 #footer{background: #f4f4f4; color: #1e1e1e;}
 #footer p:first-of-type::before{background: #1e1e1e;}
 
-/* modal */
-#dim, .md_cnt{position: fixed; z-index: 1000;}
-#dim{display: none; top: 0; left: 0; width: 100%; height: 100%; background: rgba(30, 30, 30, 0.5);}
-.md_cnt{top: 50%; left: 50%; transform: translate(-50%, -50%); background: #f4f4f4; padding: 50px;margin: 0 auto; text-align: center; border-radius: 20px; visibility: hidden;}
+
 
 #modal1{width: 800px; height: 500px;}
 #modal1 img{border-radius: 10px;}
@@ -55,3 +52,13 @@ body{background: #f4f4f4;}
 #modal3 a:hover, #modal3 a:focus{color: #2f4364;}
 #modal3 a:hover::after, #modal3 a:focus::after{width: 240px; background: #2f4364;}
 #modal3 .md_close_btn{top: 10px; right: 10px; width: 60px; height: 30px;line-height: 30px; font-size: 14px; background: #2f4364; color: #f4f4f4; text-align: center; border-radius: 15px;}
+
+#modalGnb{width: 90vw; height: 80vh; background: url("../images/index_outro/kakao_bg.jpeg") no-repeat 30% 10%; background-size: cover;}
+#modalGnb ul{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#modalGnb ul li:first-child{width: 400px; height: 84px;}
+#modalGnb ul li:first-child a img{width: 400px; height: 84px;}
+#modalGnb ul li + li{margin-top: 30px;}
+#modalGnb a{margin-left: 5px; margin-top: 30px;font-size: 36px; font-family: GyeongGiBatang;}
+#modalGnb .md_close_btn{position: fixed; top: 10px; right: 10px; width: 100px; height: 40px;line-height: 40px;  background: rgba(47, 67, 100, .3); color: #f4f4f4; text-align: center; border-radius: 15px;}
+#modalGnb .md_close_btn img{position: absolute; top: 5px; left: 10px; width: 30px; height: 30px;}
+#modalGnb .md_close_btn span{position: absolute; top: 50%; right: 10px; transform: translateY(-50%);font-size: 16px;}

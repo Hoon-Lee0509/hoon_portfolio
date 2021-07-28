@@ -4,10 +4,41 @@
 #main{width: 100vw; height: 100vh; background: url("../images/index_outro/main_bg_flower_1920.jpg") no-repeat center top; background-size: cover;color: #f4f4f4;}
 #main div.p_a{top: 300px; left: 300px; padding: 0 20px;}
 #main p{font-size: 24px;}
-#main img{display: block; width: 685px; height: 132px;}
+#main img{display: block; width: 685px; height: 132px;/* animation: opacity 2s infinite normal forwards; */}
 #main .text1{margin: 0 0 10px 180px;}
-#main .text2{color: #fff09f; margin-top: 20px;}
+#main .text2{color: #fff09f; margin-top: 20px; font-size: 36px; font-family: GyeonggiBatang; font-style: italic; }
 #main .text3{bottom: 50px; left: 300px;font-size: 16px;line-height: 24px;}
+#main .text2 span:nth-child(1){animation: opacity 2s infinite normal none;}
+#main .text2 span:nth-child(2){animation: opacity 2s 0.2s infinite normal none;}
+#main .text2 span:nth-child(3){animation: opacity 2s 0.4s infinite normal none;}
+#main .text2 span:nth-child(4){animation: opacity 2s 0.6s infinite normal none;}
+#main .text2 span:nth-child(5){animation: opacity 2s 0.8s infinite normal none;}
+#main .text2 span:nth-child(6){animation: opacity 2s 1s infinite normal none;}
+#main .text2 span:nth-child(7){animation: opacity 2s 1.2s infinite normal none;}
+#main .text2 span:nth-child(8){animation: opacity 2s 1.4s infinite normal none;}
+#main .text2 span:nth-child(9){animation: opacity 2s 1.6s infinite normal none;}
+#main .text2 span:nth-child(10){animation: opacity 2s 1.8s infinite normal none;}
+#main .text2 span:nth-child(11){animation: opacity 2s 2s infinite normal none;}
+#main .text2 span:nth-child(12){animation: opacity 2s 2.2s infinite normal none;}
+#main .text2 span:nth-child(13){animation: opacity 2s 2.4s infinite normal none;}
+#main .text2 span:nth-child(14){animation: opacity 2s 2.6s infinite normal none;}
+#main .text2 span:nth-child(15){animation: opacity 2s 2.8s infinite normal none;}
+#main .text2 span:nth-child(16){animation: opacity 2s 3s infinite normal none;}
+#main .text2 span:nth-child(17){animation: opacity 2s 3.2s infinite normal none;}
+#main .text2 span:nth-child(18){animation: opacity 2s 3.4s infinite normal none;}
+
+@-moz-keyframes opacity {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@-webkit-keyframes opacity {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes opacity {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
 
 /* #intro */
 #intro{position: relative; width: 100vw; height: 1000px; line-height: 24px;}
@@ -18,7 +49,7 @@
 #intro .frame{width: 450px;height: 700px; border-radius: 225px; background: url("../images/index_outro/intro_bg_resize.jpeg") no-repeat center; background-size: cover;}
 #intro .intro_txt{width: 480px;font-size: 18px;}
 #intro .intro_txt p{font-size: 14px;}
-#intro .intro_txt p:first-of-type{margin-top: 150px;}
+#intro .intro_txt p:first-of-type{margin-top: 100px;}
 #intro .intro_txt p:last-of-type{margin-top: 80px;}
 
 /* #introduction */
@@ -27,11 +58,10 @@
 
 /* sticky */
 #introduction .introduces{height: 1300vh;}
-#introduction .sticky{position: -webkit-sticky; position: sticky; top: 0; height: 100vh; background-color: #2f4364;}
+#introduction .sticky{position: -webkit-sticky; position: sticky; top: 0; height: 100vh; background-color: #2f4364; overflow: hidden;}
 #introduction .text_wrap{position: relative; height: 100%; background: no-repeat center;background-size: cover;}
-#introduction .text_wrap div{position: absolute; top: 0; left: 0; font-size: 5vw; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: opacity 0.2s;}
+#introduction .text_wrap div{position: absolute; top: 0; left: 0; font-size: 5vw; text-align: center; width: 100%; height: 100vh; line-height: 100vh; opacity: 0; transition: opacity 0.2s; display: none;}
 #introduction .text_wrap div:first-child{background: url("../images/common/style_white.png") no-repeat center; background-size: 20%; color: #f4f4f4; font-family: GyeonggiBatang;}
-#introduction .text_wrap .conan_bg{background-image: url("../images/index_outro/conan_bg.jpg"); background-size: cover; color: #f4f4f4;}
 #introduction .text_wrap .pub_bg{background-image: url("../images/index_outro/pub_bg.jpg"); color: #1e1e1e;}
 #introduction .text_wrap .work_bg{background-image: url("../images/index_outro/work_bg.png"); background-size: cover;}
 #introduction .text_wrap .count ul.d_f{justify-content: space-around; width: 1000px; height: 360px; border-radius: 20px; background: #1e1e1e; margin: 250px auto;border: 3px solid #aaa;}
@@ -49,7 +79,7 @@
 #introduction .text_wrap .three ul .red_light{background-color: rgba(234, 108, 91, 0.3);}
 #introduction .text_wrap .three ul .yel_light{background-color: rgba(244, 188, 84, 0.3);}
 #introduction .text_wrap .three ul .grn_light{background-color: #29c415; box-shadow: 0 0 20px 5px #89e27d; color: #29c415;}
-#introduction .text_wrap div.on{opacity: 1;}
+#introduction .text_wrap div.on{opacity: 1; display: block;}
 
 /* tab */
 #introduction .introduce_tab{padding-top: 250px;}
@@ -63,21 +93,28 @@
 #introduction .tabgroup{display: flex; justify-content: center; margin: 0;}
 #introduction .tabgroup .tab{width: 320px;height: 40px; line-height: 40px; background: #BEC6C8; cursor: pointer; text-align: center; position: relative;}
 #introduction .tabgroup .tab::before{content: ""; position: absolute; top: calc(50% - 10px); left: 20px; width: 20px; height: 20px; background: no-repeat center; background-size: cover;}
-#introduction .tabgroup #tab1::before{background-image: url("../images/index_outro/html.png");}
-#introduction .tabgroup #tab2::before{background-image: url("../images/index_outro/sone.png");}
+#introduction .tabgroup #tab1::before{background-image: url("../images/index_outro/sone.png");}
+#introduction .tabgroup #tab2::before{background-image: url("../images/index_outro/html.png");}
 #introduction .tabgroup #tab3::before{background-image: url("../images/index_outro/different.png");}
 #introduction .tabgroup #tab4::before{background-image: url("../images/index_outro/look.png");}
 #introduction .tabgroup li + li::after{content: ""; position: absolute; top: calc(50% - 10px); left: -1px; width: 2px; height: 20px; background: #aaa;}
 #introduction .tabbg{position: relative; width: 1280px; height: 600px; overflow: hidden; margin: 0 auto;}
 #introduceTab .tabpanel{position: absolute; top: 0; left: 0; background: #EFF4F8; color: #1e1e1e;width: 1280px;height: 600px; margin: 0 auto; visibility: hidden; border-radius: 0 0 10px 10px;}
 #introduceTab .tabpanel.active{visibility: visible;}
-#introduceTab .tabpanel:not(#tabpanel1) div{display: block; padding: 50px; font-size: 20px;}
-#introduceTab .tabpanel:not(#tabpanel1) div p{width: 1180px; height: 500px; overflow-y: scroll;background: #f6ffee; padding: 10px 0 0 10px;}
+#introduceTab .tabpanel:not(#tabpanel2) > div{font-size: 20px;width: 1270px; height: 580px; overflow-y: scroll; background: #EFF4F8; padding: 10px 0 0 10px; overflow-x: hidden;}
 #introduceTab .tab:hover, #introduceTab .tab:focus, #introduceTab .tab.active{background: #EFF4F8; color: #2f4364;}
+#introduceTab .tabpanel:not(#tabpanel2) div p::-webkit-scrollbar-thumb{background-color: #a8a8a8;}
+/* profile */
+#tabpanel1 > div{justify-content: center; position: relative; margin: 0 auto;}
+#tabpanel1 div ul{width: 400px; height: 550px; padding-top: 30px;}
+#tabpanel1 div ul  li{width: 300px; margin: 0 auto;}
+#tabpanel1 div div{width: 630px; height: 550px; padding-top: 30px; line-height: 30px;}
+#tabpanel1 div ul li:nth-child(2){margin-top: 50px;}
+#tabpanel1 div ul li img{width: 300px; border-radius: 50px;}
 
 /* skill */
 #introduceTab .tabpanel .skill{display: flex; justify-content: space-around; margin: 0 auto; padding-top: 80px; flex-wrap: wrap;}
-#introduceTab .tabpanel .skill .skill_bg{width: 600px;height: 70px; border-radius: 35px; background: #9b9b9b;}
+#introduceTab .tabpanel .skill .skill_bg{width: 600px;height: 70px; border-radius: 35px; background: #dddddd;}
 #introduceTab .tabpanel .skill li .skill_gauge{width: 70px; height: 70px; border-radius: 35px; transition: all 1.5s;}
 #introduceTab .tabpanel .skill li .skill_gauge.on{transition: all 1.5s;}
 #introduceTab .tabpanel .skill li.html .skill_gauge.on{width: 550px; background: #e93e30;}

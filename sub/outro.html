@@ -28,25 +28,15 @@
                     <img src="../images/logo/logo_small_white.png" alt="My Flower Life">
                 </a>
             </h1>
-            <a href="" class="gnb_open_btn p_a">
-                <img src="../images/common/menu_resize.png" alt="">
+            <button type="button" class="gnb_open_btn p_a md_open_btn" aria-haspopup="dialog" title="메뉴 열기" data-href="#modalGnb">
+                <img src="../images/common/menu_rose.png" alt="">
                 <span>MENU</span>
-            </a>
+            </button>
         </div>
-        <nav id="gnb" class="w1330 p_f">
-            <h2 class="blind">주메뉴</h2>
-            <a href="" class="gnb_close_btn"><img src="../images/common/menu_resize.png" alt="">CLOSE</a>
-            <ul>
-                <li><a href="../index.html"><img src="../images/logo/logo_white.png" alt="My Flower Life"></a></li>
-                <li><a href="../index.html#intro">Intro</a></li>
-                <li><a href="../index.html#introduction">Introduction</a></li>
-                <li><a href="../work/work01_kgr.html">Work 01. 고구려대학교</a></li>
-                <li><a href="../work/work02_theh.html">Work 02. 디에이치퍼니쳐</a></li>
-                <li><a href="outro.html">Outro</a></li>
-                <li><a href="outro.html#subsMe">Subscribe Me</a></li>
-            </ul>
-        </nav>
     </header>
+    <div id="sideBar">
+        <div id="digital" class="p_f"></div>
+    </div>
     <div id="outro" class="fade">
         <h2 class="fade_up">Outro. 끝마치며</h2>
         <div class="w1330">
@@ -96,7 +86,7 @@
 
     <div id="modal1" class="md_cnt p_r" role="dialog" aria-model="true" aria-labelledby="mdTit1">
         <h3 class="blind">감사합니다</h3>
-        <img src="../images/index_outro/modal1.jpg" alt="">
+        <img src="../images/index_outro/modal1.jpg" alt="Thank You">
         <p>저를 구독해주셔서 정말 감사합니다.<br>기대에 충족하는 인재가 되기 위해<br>열심히 노력하겠습니다!</p>
         <button type="button" class="md_close_btn p_a" data-link="last">CLOSE</button>
     </div>
@@ -116,4 +106,22 @@
         <a href="https://open.kakao.com/o/sYtlwcod" data-link="first">이 곳을 클릭해도 연락이 가능합니다!</a>
         <button type="button" class="md_close_btn p_a" data-link="last">CLOSE</button>
     </div>
+    <div id="modalGnb" class="md_cnt p_r w1330" role="dialog" aria-model="true" aria-labelledby="mdGnb">
+        <h2 class="blind">주메뉴</h2>
+        <ul>
+            <li>
+                <a href="../index.html" data-link="first">
+                    <img src="../images/logo/logo_white.png" alt="My Flower Life">
+                </a>
+            </li>
+            <li><a href="../index.html#intro">Intro</a></li>
+            <li><a href="../index.html#introduction">Introduction</a></li>
+            <li><a href="../work/work01_kgr.html">Work 01. 고구려대학교</a></li>
+            <li><a href="../work/work02_theh.html">Work 02. 디에이치퍼니쳐</a></li>
+            <li><a href="outro.html">Outro</a></li>
+            <li><a href="outro.html#subsMe">Subscribe Me</a></li>
+        </ul>
+        <button type="button" class="md_close_btn" data-link="last"><img src="../images/common/menu_rose.png" alt=""><span>CLOSE</span></button>
+    </div>
 </body>
+</html>

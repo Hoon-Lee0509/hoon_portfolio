@@ -46,6 +46,7 @@ body{font-family: "나눔고딕", "NanumGothic", "Noto Sans KR", sans-serif; fon
 .p_f{position: fixed;}
 .w1330{width: 1330px; margin: 0 auto;}
 .d2coding{font-family: "D2Coding";}
+.fz16{font-size: 16px;}
 
 /* #skip */
 #skip a{position: absolute; top: 0; left: -9999px; z-index: 1000;}
@@ -60,20 +61,6 @@ body{font-family: "나눔고딕", "NanumGothic", "Noto Sans KR", sans-serif; fon
 #header .gnb_open_btn{top: 5px; right: 20px; width: 100px; height: 30px; color: #f4f4f4;line-height: 30px; font-size: 18px;}
 #header .gnb_open_btn img{width: 30px; height: 30px;}
 
-/* menu */
-#gnb{top: 0; left: 0; visibility: hidden; width: 100vw; height: 100vh; background: url("../images/index_outro/kakao_bg.jpeg") no-repeat center top; background-size: cover;}
-#gnb .gnb_close_btn{display: block; line-height: 30px; font-size: 18px; float: right;width: 100px; height: 30px; color: #f4f4f4; margin: 5px 20px 0 0; }
-#gnb .gnb_close_btn img{width: 30px; height: 30px;}
-#gnb .gnb_group{text-align: center;}
-#gnb .gnb_group > a{padding-top: 150px;}
-#gnb ul{width: 800px; height: 100vh; margin: 80px auto; text-align: left; font-family: GyeongGiBatang;}
-#gnb ul li{position: relative; width: 400px; height: 70px; line-height: 70px;}
-#gnb ul li::after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 70px;background: url("../images/common/depth_hover.png") no-repeat left center; background-size: contain; opacity: 0; transition: all 0.5s; z-index: -10;}
-#gnb ul li:hover::after, #gnb ul li:focus::after{opacity: 1; width: 400px;}
-#gnb ul li + li{margin-top: 40px;font-size: 36px;}
-#gnb ul li a{display: block; transition: all .5s;}
-#gnb ul li:hover a, #gnb ul li a:focus{color: #f4f4f4;}
-#gnb.on{visibility: visible;}
 
 .slick-arrow{bottom: -40px; width: 60px; height: 20px;display: block;z-index: 200;}
 .slick-next::before{content: "Next";}
@@ -92,8 +79,12 @@ body{font-family: "나눔고딕", "NanumGothic", "Noto Sans KR", sans-serif; fon
 .fade.on .fade_right{transform: translate(0,0); opacity: 1;}
 .fade .fade_left{transform: translate(100px,0); opacity: 0; transition: all 0.5s;}
 .fade.on .fade_left{transform: translate(0,0); opacity: 1;}
+.fade .fade_tr{opacity: 0; transition: all 3s;}
+.fade.on .fade_tr{opacity: 1}
 .delay-3{transition-delay: 0.5s !important;}
 .delay-6{transition-delay: 1s !important;}
+.delay-9{transition-delay: 2s !important;}
+.delay-12{transition-delay: 3s !important;}
 
 /* #footer */
 #footer{width: 100vw; height: 300px; background: #1e1e1e; color: #f4f4f4; text-align: center;}
@@ -106,3 +97,30 @@ body{font-family: "나눔고딕", "NanumGothic", "Noto Sans KR", sans-serif; fon
 ::-webkit-scrollbar-track{background-color: transparent; width: 8px;}
 ::-webkit-scrollbar:hover, ::-webkit-scrollbar-track:hover{width: 12px; border-left: 1px solid #999;}
 ::-webkit-scrollbar-thumb:hover{width: 8px; margin-right: 2px;}
+
+/* modal */
+#dim, .md_cnt{position: fixed; z-index: 1000;}
+#dim{display: none; top: 0; left: 0; width: 100%; height: 100%; background: rgba(30, 30, 30, 0.5);}
+.md_cnt{top: 50%; left: 50%; transform: translate(-50%, -50%); background: #f4f4f4; padding: 50px;margin: 0 auto; text-align: center; border-radius: 20px; visibility: hidden;}
+
+#modalGnb{width: 90vw; height: 80vh; background: url("../images/index_outro/kakao_bg.jpeg") no-repeat 30% 10%; background-size: cover;}
+#modalGnb ul{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+#modalGnb ul li:first-child{width: 400px; height: 84px;}
+#modalGnb ul li:first-child a img{width: 400px; height: 84px;}
+#modalGnb ul li + li{margin-top: 30px;}
+#modalGnb a{margin-left: 5px; margin-top: 30px;font-size: 36px; font-family: GyeongGiBatang;}
+#modalGnb .md_close_btn{position: fixed; top: 10px; right: 10px; width: 100px; height: 40px;line-height: 40px;  background: #2f4364; color: #f4f4f4; text-align: center; border-radius: 15px;}
+#modalGnb .md_close_btn img{position: absolute; top: 5px; left: 10px; width: 30px; height: 30px;}
+#modalGnb .md_close_btn span{position: absolute; top: 50%; right: 10px; transform: translateY(-50%);font-size: 16px; }
+
+
+/* #sideBar */
+#sideBar{font-size: 12px;}
+.d_mode, .l_mode, .top{right: 5px; width: 40px; height: 40px; line-height: 40px; display: block;border-radius: 10px; transition: all 0.5s;text-align: center;}
+.top{bottom: 5px;}
+.d_mode,.l_mode{bottom: 55px;}
+#digital{top:  calc(50% - 75px); right: 0; width: 150px; height: 40px; transform: rotateX(90deg); color: #f4f4f4; text-align: center; border-radius: 10px; line-height: 20px; z-index: 1100;}
+body.dark_on h2, body.dark_on h3{color: #f9f9f9 !important;}
+body.dark_on #footer{background: #1e1e1e;}
+body.dark_on #footer p{color: #f4f4f4;}
+body.dark_on #footer p:first-of-type::before{background: #f4f4f4;}
