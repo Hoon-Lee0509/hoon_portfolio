@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $(this).css({display: 'none'}).prev('.l_mode').css({display: 'block'});
     $('.res_list').children('li:first-child').children('img').attr({src: "../images/common/mobile_white.png"})
     $('.res_list').children('li:nth-child(2)').children('img').attr({src: "../images/common/tablet_white.png"})
-    $('.res_list').children('li:last-child').children('img').attr({src: "../images/common/pc_white.png"})
+    $('.res_list').children('li:last-child').children('img').attr({src: "../images/common/PC_white.png"})
     $('.html_icon').attr({src: "../images/common/html_white.png"});
   });
 
