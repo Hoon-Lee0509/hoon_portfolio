@@ -99,15 +99,16 @@
 #introduction .tabgroup #tab4::before{background-image: url("../images/index_outro/look.png");}
 #introduction .tabgroup li + li::after{content: ""; position: absolute; top: calc(50% - 10px); left: -1px; width: 2px; height: 20px; background: #aaa;}
 #introduction .tabbg{position: relative; width: 1280px; height: 600px; overflow: hidden; margin: 0 auto;}
-#introduceTab .tabpanel{position: absolute; top: 0; left: 0; background: #EFF4F8; color: #1e1e1e;width: 1280px;height: 600px; margin: 0 auto; visibility: hidden; border-radius: 0 0 10px 10px;}
-#introduceTab .tabpanel.active{visibility: visible;}
+#introduceTab .tabpanel{position: absolute; top: 0; left: 0; background: #EFF4F8; color: #1e1e1e;width: 1280px;height: 600px; margin: 0 auto; visibility: hidden; border-radius: 0 0 10px 10px; opacity: 0;}
+#introduceTab .tabpanel:focus{outline: #000 solid 3px;}
+#introduceTab .tabpanel.active{visibility: visible; opacity: 1;}
 #introduceTab .tabpanel:not(#tabpanel2) > div{font-size: 20px;width: 1270px; height: 580px; overflow-y: scroll; background: #EFF4F8; padding: 10px 0 0 10px; overflow-x: hidden;}
 #introduceTab .tab:hover, #introduceTab .tab:focus, #introduceTab .tab.active{background: #EFF4F8; color: #2f4364;}
 #introduceTab .tabpanel:not(#tabpanel2) div p::-webkit-scrollbar-thumb{background-color: #a8a8a8;}
 /* profile */
 #tabpanel1 > div{justify-content: center; position: relative; margin: 0 auto;}
 #tabpanel1 div ul{width: 400px; height: 550px; padding-top: 30px;}
-#tabpanel1 div ul  li{width: 300px; margin: 0 auto;}
+#tabpanel1 div ul  li{width: 300px; margin: 0 auto; line-height: 30px;}
 #tabpanel1 div div{width: 630px; height: 550px; padding-top: 30px; line-height: 30px;}
 #tabpanel1 div ul li:nth-child(2){margin-top: 50px;}
 #tabpanel1 div ul li img{width: 300px; border-radius: 50px;}
@@ -128,7 +129,14 @@
 #introduceTab .tabpanel .skill .skill_btn{width: 70px; height: 70px;}
 #introduceTab .tabpanel .skill .skill_btn img{display: block; width: 100%; height: 100%;}
 
+#introduceTab #tabpanel3{text-align: left;}
+#introduceTab #tabpanel3 div div{width: 800px; margin: 0 auto;}
+#introduceTab #tabpanel3 div div img{width: 100%;}
+#introduceTab #tabpanel4{text-align: center;}
+#introduceTab #tabpanel4 img{margin-top: 20px;}
+#introduceTab #tabpanel4 p{margin-top: 20px; font-size: 36px;}
 /* slide */
+#workShow h3{text-align: center;}
 #workShow .slick-slide{width: 1280px;}
 #workShow .slick-wrapper{width: 1280px; margin: 50px auto;}
 #workShow .slick-wrapper .slick-slide img{width: 100%; padding: 50px; box-sizing: border-box;}
@@ -139,7 +147,6 @@
 #workShow .slick-wrapper .slide_bg3{background-image: url("../images/mock-up/theh_iMac.png");}
 #workShow .slick-wrapper .slide_bg4{background-image: url("../images/mock-up/theh_iPad_Pro_2.png");}
 #workShow .slick-wrapper .slide_bg5{background-image: url("../images/mock-up/theh_iphone.png");}
-#workShow p{font-size: 24px; margin-left: 20px;}
 #workShow .controller{justify-content: space-around; text-align: center; margin: 0 auto; width: 150px; height: 30px; border: 1px solid #f4f4f4; border-radius: 15px;}
 #workShow .controller button{width: 71px; height: 26px; line-height: 26px; margin-top: 2px;  border-radius: 14px; box-sizing: border-box; transition: all 0.5s;}
 #workShow .controller button.on{background: #f4f4f4; color: #1e1e1e;}

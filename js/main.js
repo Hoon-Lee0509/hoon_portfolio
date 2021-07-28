@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('.skill_btn').on('click', function () {
-        $(this).parent().toggleClass('on').parent().next('p').toggleClass('on');
+        $(this).parent().toggleClass('on').parent().next().next('p').toggleClass('on');
 
     });
 
