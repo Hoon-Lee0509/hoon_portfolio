@@ -2,10 +2,17 @@
 
 #header{background-color: #bd4848;}
 
+/* height: 200px;
+}
+#cnt1 > div > div {
+    justify-content: space-around;
+    flex-direction: column; */
+
 /* #cnt1 */
 #cnt1 a{background: #bd4848; color: #f2f2f2; border:1px solid #bd4848; box-sizing: border-box;}
 #cnt1 a:hover, #cnt1 a:focus{background: #f2f2f2; color: #bd4848;}
-
+#cnt1 > div > div {justify-content: space-around;flex-direction: column; height: 200px; margin-top: 50px;}
+#cnt1 div div a{width: 400px; margin-top: 0;}
 /* #cnt2 */
 #cnt2 li p::before{background: #bd4848;}
 
