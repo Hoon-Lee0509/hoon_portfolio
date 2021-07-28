@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     $(this).css({display: 'none'}).next('.d_mode').css({display: 'block'});
     $('.res_list').children('li:first-child').children('img').attr({src: "../images/common/mobile.png"})
     $('.res_list').children('li:nth-child(2)').children('img').attr({src: "../images/common/tablet.png"})
-    $('.res_list').children('li:last-child').children('img').attr({src: "../images/common/pc.png"})
+    $('.res_list').children('li:last-child').children('img').attr({src: "../images/common/PC.png"})
     $('.html_icon').attr({src: "../images/common/html.png"});
   });
 
